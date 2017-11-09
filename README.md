@@ -1,7 +1,7 @@
 # CamNav
 
 
-##Development
+## Development
 
 ### Good tuto
 https://tutorial.djangogirls.org/en/django_start_project/
