@@ -3,7 +3,7 @@
 
 ##Development
 
-### Good tupo
+### Good tuto
 https://tutorial.djangogirls.org/en/django_start_project/
 
 ### Create the project
@@ -12,6 +12,8 @@ https://tutorial.djangogirls.org/en/django_start_project/
 
 
 ### Create apps
+
+cd mymycamnavsite
 
 ```django-admin startapp main_app```
 
