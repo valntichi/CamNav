@@ -1,9 +1,9 @@
 # CamNav
 
 
-##Development
+## Development
 
-### Good tupo
+### Good tuto
 https://tutorial.djangogirls.org/en/django_start_project/
 
 ### Create the project
