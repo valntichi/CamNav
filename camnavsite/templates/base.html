@@ -9,11 +9,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Express News a Entertainment Category Flat Bootstarp responsive Website Template | Home :: w3layouts</title>
-	<link href={% static "assets/css/bootstrap.css" %} rel="stylesheet">
+	<link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src={% static "assets/js/jquery.min.js" %}></script>
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
 
-    <link  rel="stylesheet" type="text/css" media="all" href={% static 'assets/css/style.css' %} />
+    <link  rel="stylesheet" type="text/css" media="all" href="{% static 'assets/css/style.css' %}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,11 +23,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- for bootstrap working -->
-        <script type="text/javascript" src={% static "assets/js/bootstrap.js" %}></script>
+        <script type="text/javascript" src="{% static 'assets/js/bootstrap.js' %}"></script>
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-<script src={% static "assets/js/responsiveslides.min.js" %}></script>
+<script src="{% static 'assets/js/responsiveslides.min.js' %}"></script>
 	<script>
 		$(function () {
 		  $("#slider").responsiveSlides({
@@ -39,8 +39,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		  });
 		});
 	</script>
-	<script type="text/javascript" src={% static "assets/js/move-top.js" %}></script>
-<script type="text/javascript" src={% static "assets/js/easing.js" %}></script>
+	<script type="text/javascript" src="{% static 'assets/js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/easing.js' %}"></script>
 <!--/script-->
 <script type="text/javascript">
     jQuery(document).ready(function($) {
@@ -60,7 +60,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<ul>
 						<li><a href="/">Home</a></li>
 						<li><a href="/about">About Us</a></li>
-						<li><a href="privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="/privacy-policy">Privacy Policy</a></li>
 						<li><a href="/contact">Contact Us</a></li>
 					</ul>
 				</div>
@@ -72,7 +72,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<div class="header-bottom">
 			<div class="logo text-center">
-				<a href="/"><img src="{% static "assets/images/logo.jpg" %}" alt="" /></a>
+				<a href="/"><img src="{% static 'assets/images/logo.jpg' %}" alt="" /></a>
 			</div>
 			<div class="navigation">
 				<nav class="navbar navbar-default" role="navigation">
@@ -156,8 +156,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 				    </div>
 					<!-- search-scripts -->
-					<script src={% static "assets/js/classie.js" %}></script>
-					<script src={% static "assets/js/uisearch.js" %}></script>
+					<script src="{% static 'assets/js/classie.js' %}"></script>
+					<script src="{% static 'assets/js/uisearch.js' %}"></script>
 						<script>
 							new UISearch( document.getElementById( 'sb-search' ) );
 						</script>
@@ -168,8 +168,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<!--/.navbar-collapse-->
 	 <!--/.navbar-->
-			</div>
-		</nav>
+			></nav></div>
+
 		</div>
 	</div>
 	<!-- header-section-ends-here -->
@@ -184,7 +184,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="clearfix"></div>
 			</div>
 			<div class="clearfix"></div>
-			<script type="text/javascript" src={% static "assets/js/jquery.marquee.min.js" %}></script>
+			<script type="text/javascript" src="{% static 'assets/js/jquery.marquee.min.js' %}"></script>
 			<script>
 			  $('.marquee').marquee({ pauseOnHover: true });
 			  //@ sourceURL=pen.js
@@ -194,7 +194,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- content-section-starts-here -->
 
     {% block content %}
-{% endblock %}
+    
+    {% endblock %}
 
 	<!-- content-section-ends-here -->
 	<!-- footer-section-starts-here -->
@@ -220,14 +221,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-4 col-xs-6 col-sm-6 footer-grid">
 					<h4 class="footer-head">Flickr Feed</h4>
 					<ul class="flickr">
-						<li><a href="#"><img src={% static "assets/images/bus4.jpg" %}></a></li>
-                        <li><a href="#"><img src={% static "assets/images/bus2.jpg" %}></a></li>
-						<li><a href="#"><img src={% static "assets/images/bus3.jpg" %}></a></li>
-						<li><a href="#"><img src={% static "assets/images/tec4.jpg" %}></a></li>
-						<li><a href="#"><img src={% static "assets/images/tec2.jpg" %}></a></li>
-						<li><a href="#"><img src={% static "assets/images/tec3.jpg" %}></a></li>
-                        <li><a href="#"><img src={% static "assets/images/bus2.jpg" %}></a></li>
-						<li><a href="#"><img src={% static "assets/images/bus3.jpg" %}></a></li>
+						<li><a href="#"><img src="{% static 'assets/images/bus4.jpg' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'assets/images/bus2.jpg' %}"></a></li>
+						<li><a href="#"><img src="{% static 'assets/images/bus3.jpg' %}"></a></li>
+						<li><a href="#"><img src="{% static 'assets/images/tec4.jpg' %}"></a></li>
+						<li><a href="#"><img src="{% static 'assets/images/tec2.jpg' %}"></a></li>
+						<li><a href="#"><img src="{% static 'assets/images/tec3.jpg' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'assets/images/bus2.jpg' %}"></a></li>
+						<li><a href="#"><img src="{% static 'assets/images/bus3.jpg' %}"></a></li>
 						<div class="clearfix"></div>
 					</ul>
 				</div>
@@ -258,7 +259,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="footer-bottom">
 			<div class="wrap">
 				<div class="copyrights col-md-6">
-					<p> © 2015 Express News. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+					<p> © {% now 'Y' %} Express News. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
 				</div>
 				<div class="footer-social-icons col-md-6">
 					<ul>

@@ -33,7 +33,8 @@ class ShortCodeView(TemplateView):
 class SingleView(TemplateView):
     template_name = "sections/single.html"
 
-
+class PrivacyPolicyView(TemplateView):
+    template_name = "sections/privacy-policy.html"
 
 
 

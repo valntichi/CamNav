@@ -2143,12 +2143,12 @@ span.msg a {
 }
 .nbs-flexisel-nav-left {
   	left: -7em;
-	background: url(../images/left.png) 0px 0px no-repeat;
+	background: url({% static '../images/left.png' %}) 0px 0px no-repeat;
   display:none;
 }
 .nbs-flexisel-nav-right {
 	right: -7em;
-	background: url(../images/right.png) 0px 0px no-repeat;
+	background: url({% static '../images/right.png' %}) 0px 0px no-repeat;
   display:none;
 }
 /*-- //sports --*/

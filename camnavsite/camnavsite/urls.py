@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from main_app.views import HomeView, AboutView, ContactView, BusinessView, SportView, TechnologyView, EntertainmentView,\
-ShortCodeView, FashionView, SingleView
+ShortCodeView, FashionView, SingleView, PrivacyPolicyView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,11 +28,11 @@ urlpatterns = [
     url(r'^business/$', BusinessView.as_view(), name="business"),
     url(r'^entertainment/$', EntertainmentView.as_view(), name="entertainment"),
     url(r'^sports/$', SportView.as_view(), name="sports"),
-url(r'^technology/$', TechnologyView.as_view(), name="technology"),
-url(r'^shortcodes/$', ShortCodeView.as_view(), name="shortcodes"),
-url(r'^fashion/$', FashionView.as_view(), name="fashion"),
-url(r'^single/$', SingleView.as_view(), name="single"),
-
+    url(r'^technology/$', TechnologyView.as_view(), name="technology"),
+    url(r'^shortcodes/$', ShortCodeView.as_view(), name="shortcodes"),
+    url(r'^fashion/$', FashionView.as_view(), name="fashion"),
+    url(r'^single/$', SingleView.as_view(), name="single"),
+    url(r'^privacy-policy/$', PrivacyPolicyView.as_view(), name="privacy-policy"),
 
 
 ]
