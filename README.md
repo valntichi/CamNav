@@ -17,12 +17,31 @@ cd mymycamnavsite
 
 ```django-admin startapp main_app```
 
-### Run
+### Run the website
 
 ```python manage.py runserver```
 
 
-Go to http://127.0.0.1:8000/ to see the result
+In your browser Go to http://127.0.0.1:8000/ to see the result
+
+### Database
+
+```python manage.py makemigrations```
+
+```python manage.py migrate```
+
+```python manage.py createsuperuser```
+
+### Sqlite3
+
+Open database
+
+```sqlite3 db.sqlite3```
+
+```> .tables``` : list of tables
+
+```> .quit```
+
 
 ### Create templates
 
@@ -30,11 +49,6 @@ Go to http://127.0.0.1:8000/ to see the result
 lulu.tngnt.co
 
 
-<ul>
-    <li><a href="business.html">Business</a></li>
-    <li><a href="technology.html">Technology</a></li>
-    <li><a href="entertainment.html">Entertainment</a></li>
-    <li><a href="sports.html">Sports</a></li>
-    <li><a href="fashion.html">Fashion</a></li>
-    <li><a href="shortcodes.html">Health</a></li>
-</ul>
+telerik chart
+to draw graphs
+
