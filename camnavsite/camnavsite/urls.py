@@ -20,6 +20,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from main_app.views import HomeView, AboutView, ContactView, BusinessView, SportView, TechnologyView, EntertainmentView,\
 ShortCodeView, FashionView, SingleView, PrivacyPolicyView
 
+from main_app.views import LoginView, ArticleViewSet
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name="home"),
@@ -33,7 +35,10 @@ urlpatterns = [
     url(r'^fashion/$', FashionView.as_view(), name="fashion"),
     url(r'^single/$', SingleView.as_view(), name="single"),
     url(r'^privacy-policy/$', PrivacyPolicyView.as_view(), name="privacy-policy"),
+    url(r'^login/$', LoginView.as_view(), name="login"),
 
+
+    url(r'^api/v1/articles/$', ArticleViewSet.as_view({'get': 'list', 'post': 'create'}), name="login"),
 
 ]
 urlpatterns += staticfiles_urlpatterns()
