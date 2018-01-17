@@ -51,7 +51,7 @@ Open database
 ```
 heroku login
 
-heroku apps:create camnav
+heroku apps:create navy-cm
 
 git push heroku master
 ```
