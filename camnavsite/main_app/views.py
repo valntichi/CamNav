@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.views.generic import TemplateView, View
 
 # Create your views here.
+from rest_framework.parsers import MultiPartParser, FormParser
+
 
 class HomeView(TemplateView):
     template_name = "home.html"
@@ -45,7 +47,7 @@ class LoginView(View):
     template_name = 'login.html'
 
     def get(self, request):
-        print 'get'
+        print 'get', request.GET
         return render(request, self.template_name, context={'username':'unknown'})
     def post(self, request):
         context = {}
@@ -86,6 +88,24 @@ class ArticleViewSet(viewsets.ModelViewSet):
             # serializer = ArticleSerializer(data=article)
             serializer.data["id"] = article.id
             serializer.data["created_on"] = article.created_on
+            return Response(data=serializer.data, status=201)
+        else:
+            return Response(serializer.errors, 400)
+
+from .serializers import FileListSerializer, PhotoSerializer
+from .models import Photo
+
+
+class PhotoViewSet(viewsets.ModelViewSet):
+    serializer_class = PhotoSerializer
+    parser_classes = (MultiPartParser, FormParser,)
+    queryset=Photo.objects.all()
+
+    def create(self, request, *args, **kwargs):
+        print 'POST'
+        serializer = PhotoSerializer(data=request.data)
+        if serializer.is_valid():
+            print serializer.data
             return Response(data=serializer.data, status=201)
         else:
             return Response(serializer.errors, 400)

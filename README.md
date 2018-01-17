@@ -45,6 +45,19 @@ Open database
 
 ### Create templates
 
+
+### Heroku
+
+```
+heroku login
+
+heroku apps:create camnav
+
+git push heroku master
+```
+
+
+
 ### AB Collection
 lulu.tngnt.co
 
@@ -76,6 +89,8 @@ values ('John-imported','ptchankue@gmail.com',
 ## MySQL
 
 mysql.server start
+
+
 
 mysql -u root
 
