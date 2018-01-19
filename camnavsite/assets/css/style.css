@@ -119,7 +119,7 @@ label{
 	text-decoration: none;
 }
 .content.title .back-to-article a:hover {
-	background: #84754e;
+	background: #24166d ;
 }
 .content.title .back-to-article a i {
 	margin-left: 5px;
@@ -160,7 +160,7 @@ label{
 	font-size: 1.4em;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #84754e;
+	color: #24166d ;
 	background-color: #fff;
 }
 .navbar-nav > li {
@@ -170,7 +170,7 @@ label{
 	padding: 0px;
 }
 .navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a.active {
-	color:#84754e;
+	color:#24166d ;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
 	background-color: #fff;
@@ -180,10 +180,10 @@ label{
 	color:#ee5656!important;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #84754E;
+	background-color: #24166d ;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color:#84754E;
+	background-color:#24166d ;
 }
 .navbar-toggle {
 	position: relative;
@@ -201,7 +201,7 @@ label{
 	-webkit-border-radius: 4px;
 }
 .navbar-default .navbar-toggle {
-	border-color: #84754E;
+	border-color: #24166d ;
 }
 .dropdown-menu .divider {
 	height: 0;
@@ -242,7 +242,7 @@ label{
 }
 .multi-column-dropdown li a:hover {
 	text-decoration: none;
-	color: #84754E;
+	color: #24166d ;
 	background: none;
 }	
 @media (max-width:767px) {
@@ -363,7 +363,7 @@ label{
     color: #777;
     font-size: 1em;
     padding: 20px 0;
-    color: #84754E;
+    color: #24166d ;
     overflow: hidden;
 }
 .move-text {
@@ -378,7 +378,7 @@ label{
     float: right;
 }
 a.breaking {
-    color: #84754E;
+    color: #24166d ;
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -507,7 +507,7 @@ ul.callbacks_tabs.callbacks1_tabs {
     text-decoration: none;
 }
 .caption a:hover {
-    color: #84754e;
+    color: #24166d ;
 }
 /*-- responsive-mediaquries --*/
 @media(max-width:1080px){
@@ -572,12 +572,12 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 h3.title-head {
     font-size: 2.5em;
-    color: #84754E;
+    color: #24166d ;
     padding: 5px 10px 7px;
 	text-transform: Capitalize;
 }
 .articles header {
-    border-bottom: 1px solid #84754e;
+    border-bottom: 1px solid #24166d ;
 }
 .articles {
     margin: 4em 0;
@@ -621,7 +621,7 @@ a.title {
     color: #000;
 }
 a.title:hover {
-	color:#84754e;
+	color:#24166d ;
 }
 .article-title p {
     color: #B5B3B3;
@@ -638,7 +638,7 @@ a.span_link {
     color: #C5C5C5;
 }
 a.span_link:hover {
-    color: #84754e;
+    color: #24166d ;
 }
 .article-text p {
     color: #777;
@@ -660,7 +660,7 @@ a.span_link:hover {
 	min-height:200px;
 }
 .life-style header {
-    border-bottom: 1px solid #84754e;
+    border-bottom: 1px solid #24166d ;
     padding-bottom: 4px;
 }
 .life-style-left-grid {
@@ -719,7 +719,7 @@ a.span_link:hover {
     margin-top: 2em;
 }
 .latest-articles header {
-    border-bottom: 1px solid #84754e;
+    border-bottom: 1px solid #24166d ;
     padding-bottom: 4px;
 }
 /*-- //technology-page --*/
@@ -734,12 +734,12 @@ p.sign {
 h1.side-title-head {
     font-size: 1.7em;
     margin-bottom: 0.5em;
-    color: #84754e;
+    color: #24166d ;
 }
 h3.side-title-head {
     font-size: 1.7em;
     margin-bottom: 0.5em;
-    color: #84754e;
+    color: #24166d ;
 }
 .newsletter input[type="text"] {
     width: 72%;
@@ -767,7 +767,7 @@ h3.side-title-head {
     margin-left: -5px;
 }
 .newsletter input[type="submit"]:hover {
-	background-color:#84754e;
+	background-color:#24166d ;
 }
 .newsletter {
     padding: 15px;
@@ -791,7 +791,7 @@ h3.side-title-head {
 	-o-transition: background-color .7s;
 	-ms-transition: background-color .7s;
 	margin-bottom: 1px;
-	border-bottom: 1px solid #84754e;
+	border-bottom: 1px solid #24166d ;
 }
 .accordation_menu input{
 	display: none;
@@ -864,7 +864,7 @@ h3.side-title-head {
 	font-weight: 600;            /*Main Color*/
 }
 .accordation_menu label{
-	background: #84754e;                         
+	background: #24166d ;
 	color:#fff;
 	font-size:17px;
 }
@@ -874,7 +874,7 @@ h3.side-title-head {
 }
 .accordation_menu input:checked + label,
 .accordation_menu input:checked + label:hover{ 
-	background: #84754e;
+	background: #24166d ;
 	color: #fff;
     font-size:17px;
 	    font-family: 'Varela Round', sans-serif;
@@ -902,18 +902,18 @@ h3.side-title-head {
     text-decoration: none;
 }
 .side-bar-article-title a:hover {
-    color: #84754e;
+    color: #24166d ;
 }
 .tags{
 	margin:3em 0;
 }
 .tags header {
-    border-bottom: 1px solid #84754e;
+    border-bottom: 1px solid #24166d ;
     padding-bottom: 4px;
 	margin-bottom: 1em;
 }
 .tags a:hover {
-	color:#84754E;
+	color:#24166d ;
 }
 a.tag1 {
     font-size: 1.8em;
@@ -1004,12 +1004,12 @@ a.tag20 {
 }
 h3.title-popular {
     font-size: 2.5em;
-    color: #84754E;
+    color: #24166d ;
     padding: 5px 10px 7px;
 	text-transform: Capitalize;
 }
 .popular-news header {
-    border-bottom: 1px solid #84754e;
+    border-bottom: 1px solid #24166d ;
     padding-bottom: 4px;
     margin-bottom: 1em;
 }
@@ -1074,7 +1074,7 @@ a.power {
 	text-transform: uppercase;
 }
 a.power:hover {
-	color: #84754e;
+	color: #24166d ;
 }
 .c-text h6 {
 	color:#000;
@@ -1096,7 +1096,7 @@ a.power:hover {
 }
 a.reu {
 	font-size: 1em;
-    color: #84754e;
+    color: #24166d ;
     float: right;
 	text-decoration: underline;
 }
@@ -1117,7 +1117,7 @@ a.reu:hover {
 	text-transform: uppercase;
 }
 .cricket header {
-    border-bottom: 1px solid #84754e;
+    border-bottom: 1px solid #24166d ;
     padding-bottom: 4px;
 	margin-bottom:2em;
 }
@@ -1148,7 +1148,7 @@ a.pp-title {
     color: #000;
 }
 a.pp-title:hover {
-    color: #84754e;
+    color: #24166d ;
 }
 .response-text-right p {
     font-size: 0.95em;
@@ -1163,7 +1163,7 @@ a.pp-title:hover {
     margin-top: 6px;
 }
 .media-body.response-text-right ul li {
-	color: #84754e;
+	color: #24166d ;
     font-size: 0.95em;
 	display:inline-block;
 }
@@ -1199,13 +1199,13 @@ a.pp-title:hover {
 #style-2::-webkit-scrollbar
 {
 	width:5px;
-	background-color: #84754e;
+	background-color: #24166d ;
 }
 
 #style-2::-webkit-scrollbar-thumb
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #84754e;
+	background-color: #24166d ;
 }
 /*-- Short Codes --*/
 a#home-tab,a#profile-tab,a#myTabDrop1 {
@@ -1360,7 +1360,7 @@ h2.heading {
 .grid_3 h3 {
 	padding-bottom: .5em;
     font-size: 3em;
-    color: #84754E;
+    color: #24166d ;
 }
 .grid_4 h3 {
 	color: #666161;
@@ -1378,7 +1378,7 @@ h2.heading {
 h3.first {
 	padding-bottom: .5em;
     font-size: 2.8em;
-    color: #84754E;
+    color: #24166d ;
 }
 .input-group {
     margin-bottom: 20px;
@@ -1386,17 +1386,17 @@ h3.first {
 h3.bars {
     padding-bottom: .5em;
     font-size: 3em;
-    color: #84754E;
+    color: #24166d ;
 }
 .page-header h1 {
     padding-bottom: .5em;
     font-size: 3em;
-    color: #84754E;
+    color: #24166d ;
 }
 section#tables h2 {
     padding-bottom: .5em;
     font-size: 2.8em;
-    color: #84754E;
+    color: #24166d ;
 }
 div#myTabContent {
     margin-top: 0.5em;
@@ -1411,7 +1411,7 @@ div#myTabContent {
 	margin-top: 2em;
 }
 .breadcrumb > li a {
-    color: #84754E;
+    color: #24166d ;
     font-size: 0.9em;
 }
 .breadcrumb > .active {
@@ -1436,7 +1436,7 @@ div#myTabContent {
 	text-decoration:none;
 }
 .categories ul li a:hover {
-	color:#84754E;
+	color:#24166d ;
 }
 .last-article {
 	background: #fff;
@@ -1511,7 +1511,7 @@ ul.categories li a:hover {
 .share_grid ul li span {
     display: block;
     font-size: 1em;
-    color: #84754E;
+    color: #24166d ;
 }
 .views{
     float: left;	
@@ -1597,13 +1597,13 @@ ul.categories li a:hover {
 	font-size: 1em;
 }
 .related-grids h5 a:hover {
-    color: #84754e;
+    color: #24166d ;
 }
 .related-grids {
     padding: 0 5px;
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-    border-color: #84754e;
+    border-color: #24166d ;
 }
 .related-posts h4 {
     color: #000000;
@@ -1701,7 +1701,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	padding: 13px 15px;
 }
 .coment-form input[type="submit"] {
-  background:  #84754e;
+  background:  #24166d ;
   border: 1px solid #f4f4f4;
   padding: .8em 0;
   width: 100%;
@@ -1731,7 +1731,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 	margin-top:4em;
 }
 .photos header {
-    border-bottom: 1px solid #84754e;
+    border-bottom: 1px solid #24166d ;
     padding-bottom: 4px;
     margin-bottom: 2em;
 }
@@ -1757,7 +1757,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     text-transform: none;
 }
 .fashion-right  h3  a:hover,.fashion-left  h3  a:hover {
-	color: #84754e;
+	color: #24166d ;
 }
 .fashion-right p,.fashion-left p {
 	color: #777;
@@ -1831,7 +1831,7 @@ a.flogo img {
 }
 h4.footer-head {
     font-size: 1.5em;
-    color: #84754e;
+    color: #24166d ;
     margin-bottom: 1em;
 }
 ul.cat li {
@@ -1859,7 +1859,7 @@ ul.flickr li img {
 	-ms-transition:0.5s all;
 }
 ul.flickr li img:hover {
-	border:1px solid #84754e;
+	border:1px solid #24166d ;
     transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -1871,10 +1871,10 @@ ul.location li  a{
 	font-size: 1.1em;
 }
 ul.cat li  a:hover {
-	color: #84754e;
+	color: #24166d ;
 }
 ul.location li  a:hover {
-	color: #84754e;
+	color: #24166d ;
 }
 ul.location li {
 	float:left;
@@ -1893,7 +1893,7 @@ ul.location li:nth-child(2) {
 span.glyphicon.glyphicon-map-marker,span.glyphicon.glyphicon-earphone ,.glyphicon.glyphicon-envelope {
     color: #fff;
     font-size: 12px;
-    background-color: #84754e;
+    background-color: #24166d ;
     padding: 6px;
     border-radius: 50%;
 	vertical-align: top;
@@ -1929,7 +1929,7 @@ ul.location {
 	margin-top: 0.8em;
 }
 .copyrights p a {
-	color:#84754e;
+	color:#24166d ;
 	margin-left:2px;
 }
 .footer-social-icons ul li {
@@ -2026,7 +2026,7 @@ p.contact_msg {
 	font-size: 1.1em;
 	padding: 10px 15px;
 	text-transform: uppercase;
-	background: #84754e;
+	background: #24166d ;
 	display: inline-block;
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -2071,7 +2071,7 @@ ul.contact_info span {
 	font-size:1.1em;
 }
 span.msg a {
-    color: #84754e;
+    color: #24166d ;
     font-size: 1em;
 }
 .map {
@@ -2179,7 +2179,7 @@ address a {
     line-height: 1.8em;
 }
 address a:hover {
-	color: #84754E;
+	color: #24166d ;
 }
 .about p {
     color: #777;
@@ -2209,7 +2209,7 @@ address a:hover {
 	-ms-transition:0.5s all;
 }
 .privacy ul li a:hover {
-	color: #84754E;
+	color: #24166d ;
     transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;

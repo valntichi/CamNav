@@ -4,36 +4,48 @@ from django.views.generic import TemplateView, View
 # Create your views here.
 from rest_framework.parsers import MultiPartParser, FormParser
 
+from .mixins import ExampleMixin
 
-class HomeView(TemplateView):
+
+class HomeView(ExampleMixin, TemplateView):
     template_name = "home.html"
+
 
 class AboutView(TemplateView):
     template_name = "sections/about.html"
 
+
 class ContactView(TemplateView):
     template_name = "sections/contact.html"
+
 
 class BusinessView(TemplateView):
     template_name = "sections/business.html"
 
+
 class SportView(TemplateView):
     template_name = "sections/sports.html"
+
 
 class TechnologyView(TemplateView):
     template_name = "sections/technology.html"
 
+
 class EntertainmentView(TemplateView):
     template_name = "sections/entertainment.html"
+
 
 class FashionView(TemplateView):
     template_name = "sections/fashion.html"
 
+
 class ShortCodeView(TemplateView):
     template_name = "sections/shortcodes.html"
 
+
 class SingleView(TemplateView):
     template_name = "sections/single.html"
+
 
 class PrivacyPolicyView(TemplateView):
     template_name = "sections/privacy-policy.html"
@@ -43,15 +55,17 @@ login API
 '''
 from django.contrib.auth import authenticate
 
+
 class LoginView(View):
     template_name = 'login.html'
 
     def get(self, request):
-        print 'get', request.GET
+
         return render(request, self.template_name, context={'username':'unknown'})
+
     def post(self, request):
         context = {}
-        print 'post'
+
         if request.POST['username'] and request.POST['password']:
             context['username'] = request.POST['username']
             user = authenticate(username=request.POST['username'], password=request.POST['password'])
@@ -73,7 +87,7 @@ class ArticleViewSet(viewsets.ModelViewSet):
     serializer_class = ArticleSerializer
 
     def create(self, request, *args, **kwargs):
-        print 'POST'
+
         serializer = ArticleSerializer(data=request.data)
         if serializer.is_valid():
             article = Article()
@@ -81,7 +95,7 @@ class ArticleViewSet(viewsets.ModelViewSet):
             article.title = serializer.data["title"]
             article.content = serializer.data["content"]
 
-            print "Author", serializer.data["author"]
+
             article.author = User.objects.get(id=serializer.data["author"])
             article.category = Category.objects.get(id=serializer.data["category"])
             article.save()
@@ -102,10 +116,24 @@ class PhotoViewSet(viewsets.ModelViewSet):
     queryset=Photo.objects.all()
 
     def create(self, request, *args, **kwargs):
-        print 'POST'
+
         serializer = PhotoSerializer(data=request.data)
         if serializer.is_valid():
             print serializer.data
             return Response(data=serializer.data, status=201)
         else:
             return Response(serializer.errors, 400)
+
+
+from .models import Person
+
+
+class PeopleView(TemplateView):
+
+    template_name = "other/people.html"
+
+    def get_context_data(self, **kwargs):
+        context = {}
+        # context = self.get_context_data(**kwargs)
+        context['people'] = Person.objects.all()
+        return context

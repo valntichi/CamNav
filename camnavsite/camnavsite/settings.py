@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # third party
     'rest_framework',
+    # 'django_tables2',
     # custom apps
     'main_app',
 

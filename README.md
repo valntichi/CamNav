@@ -98,3 +98,9 @@ mysql> show databases;
 
 mysql> created database mydb;
 
+
+
+## Django-table2
+
+Person.objects.bulk_create([Person(name='Dieter'), Person(name='Bradley')])
+
