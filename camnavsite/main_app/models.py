@@ -22,6 +22,7 @@ class Article(models.Model):
     content = models.TextField()
     breaking = models.BooleanField(default=False)
     created_on = models.DateTimeField(default=timezone.now)
+    hits = models.IntegerField()
     def __str__(self):
         return self.title + " --- " + self.content
 

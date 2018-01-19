@@ -2,3 +2,4 @@ django==1.10
 gunicorn==19.6.0
 djangorestframework==3.5
 ##django-tables2
+django-autotranslate

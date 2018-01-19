@@ -15,10 +15,15 @@
                         <p>Welcome, new user. Please log in.</p>
                     {% endif %}
                     <form method="post" action="/login/">{% csrf_token %}
-                        <label>Username: </label>
-                        <input type="text" name="username">
-                        <label>Password: </label>
-                        <input type="password" name="password">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">@</span>
+                            <input type="text" name="username" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">@</span>
+                            <input type="password" name="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                        </div>
+
                         <button type="submit">Login</button>
                     </form>
                     {{username}}<br/>

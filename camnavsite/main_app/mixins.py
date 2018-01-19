@@ -4,10 +4,11 @@ from django.core.exceptions import PermissionDenied
 class ExampleMixin(object):
 
     def __init__(self):
-        print 'ExampleMixin'
+        # print 'ExampleMixin'
+        pass
 
     def dispatch(self, request):
-        print request.user
+        # print request.user
 
         if request.user is None:
             raise PermissionDenied

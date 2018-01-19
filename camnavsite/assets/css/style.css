@@ -1813,11 +1813,11 @@ a.span_link1 {
   height: 40px;
   border: none;
   text-indent: 100%;
-  background: url("../images/to-top1.png") no-repeat 0px 0px;
+  background: url("../images/to-top.png") no-repeat 0px 0px;
 }
 /*-- footer --*/
 .footer-top {
-    background-color: #1f1f1f;
+    background-color: #eeeeee;
     padding: 4em 0;
 }
 a.flogo img {
@@ -1911,7 +1911,7 @@ ul.location {
     margin-top: 1em;
 }
 .footer-bottom {
-    background-color: #353535;
+    background-color: #bfbdbc;
     padding: 1em 0;
 }
 .copyrights {

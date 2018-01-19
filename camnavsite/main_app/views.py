@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.utils.translation import gettext as _
+
 from django.views.generic import TemplateView, View
 
 # Create your views here.
@@ -8,6 +10,7 @@ from .mixins import ExampleMixin
 
 
 class HomeView(ExampleMixin, TemplateView):
+    print _("Good morning")
     template_name = "home.html"
 
 
@@ -137,3 +140,11 @@ class PeopleView(TemplateView):
         # context = self.get_context_data(**kwargs)
         context['people'] = Person.objects.all()
         return context
+
+
+from django.http import HttpResponse
+
+
+def my_view(request):
+    output = _("Welcome to my site.")
+    return HttpResponse(output)

@@ -104,3 +104,19 @@ mysql> created database mydb;
 
 Person.objects.bulk_create([Person(name='Dieter'), Person(name='Bradley')])
 
+
+brew link gettext --force
+
+
+django-admin.py makemessages -l fr
+
+manage.py compilemessages
+
+
+django-autotranslate
+
+'autotranslate' in INSTALLED_APPS
+
+python
+
+django-admin.py makemessages -l fr_FR -e html
