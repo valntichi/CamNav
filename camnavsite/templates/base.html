@@ -8,27 +8,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 {% load staticfiles %}
 <html>
 <head>
-<title>Express News a Entertainment Category Flat Bootstarp responsive Website Template | Home :: w3layouts</title>
-	<link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
+
+    <title>Navy Cameroon </title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{% static 'assets/js/jquery.min.js' %}"></script>
 
-    <link  rel="stylesheet" type="text/css" media="all" href="{% static 'assets/css/style.css' %}" />
+
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/style.css' %}"/>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Express News Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
 
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+
+    </script>
     <!-- for bootstrap working -->
-        <script type="text/javascript" src="{% static 'assets/js/bootstrap.js' %}"></script>
 
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<<<<<<< Updated upstream
     <script src="{% static 'assets/js/responsiveslides.min.js' %}"></script>
 	<script>
+=======
+    <script src="{% static 'js/responsiveslides.min.js' %}"></script>
+    <script>
+>>>>>>> Stashed changes
 		$(function () {
 		  $("#slider").responsiveSlides({
 			auto: true,
@@ -38,9 +52,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			pager: true,
 		  });
 		});
+<<<<<<< Updated upstream
 	</script>
 	<script type="text/javascript" src="{% static 'assets/js/move-top.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/easing.js' %}"></script>
+=======
+
+
+    </script>
+    <script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+>>>>>>> Stashed changes
     <!--/script-->
     <script type="text/javascript">
         jQuery(document).ready(function($) {
@@ -49,9 +71,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
             });
         });
+
+
     </script>
 </head>
 <body>
+<<<<<<< Updated upstream
 	<!-- header-section-starts-here -->
 	<div class="header">
 		<div class="header-top">
@@ -189,19 +214,169 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="clearfix"></div>
 			<script type="text/javascript" src="{% static 'assets/js/jquery.marquee.min.js' %}"></script>
 			<script>
+=======
+<!-- header-section-starts-here -->
+<div class="header">
+    <div class="header-top">
+        <div class="wrap">
+            <div class="top-menu">
+                <ul>
+                    <li><a href="/">{% trans "Home" %}</a></li>
+                    <li><a href="/about">{% trans "About Us" %}</a></li>
+                    <li><a href="/privacy-policy">{% trans "Privacy Policy" %}</a></li>
+                    <li><a href="/contact">{% trans "Contact Us" %}</a></li>
+                </ul>
+            </div>
+            <div class="num">
+                <p>Call us : +237 032 2352 782</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="logo text-center">
+            <a href="/"><img src="{% static 'images/logo3.png' %}" alt=""/></a>
+        </div>
+        <div class="navigation">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="wrap">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <!--/.navbar-header-->
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/">{% trans "Home" %}</a></li>
+                            <li><a href="/sports">{% trans "Careers" %}</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Organisation" %}<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/entertainment">{% trans "Our leaders" %}</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/entertainment">{% trans "Our forces" %}</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/entertainment">{% trans "Our ships" %}</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/shortcodes">{% trans "Operations" %}</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Press Room" %}<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/entertainment">{% trans "News" %}</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/entertainment">{% trans "Blogs" %}</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="/business" class="dropdown-toggle" data-toggle="dropdown">{% trans "About" %}<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu multi-column columns-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul class="multi-column-dropdown">
+                                                <li><a href="/business">Our staff</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="/business">Our responsibilities</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="/business">Our band</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="/shortcodes">Contact us</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <ul class="multi-column-dropdown">
+                                                <li><a href="/business">features</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="/entertainment">{% trans "Movies" %}</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="/sports">{% trans "careers" %}</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="/business">Reviews</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="/business">Stock</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li><a href="/technology">{% trans "Technology" %}</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <div class="search">
+                            <!-- start search-->
+                            <div class="search-box">
+                                <div id="sb-search" class="sb-search">
+                                    <form>
+                                        <input class="sb-search-input" placeholder="Enter your search term..."
+                                               type="search" name="search" id="search">
+                                        <input class="sb-search-submit" type="submit" value="">
+                                        <span class="sb-icon-search"> </span>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- search-scripts -->
+                            <script src="{% static 'js/classie.js' %}"></script>
+                            <script src="{% static 'js/uisearch.js' %}"></script>
+                            <script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+
+
+                            </script>
+                            <!-- //search-scripts -->
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!--/.navbar-collapse-->
+                <!--/.navbar-->
+            </nav>
+        </div>
+
+    </div>
+</div>
+<!-- header-section-ends-here -->
+<div class="wrap">
+    <div class="move-text">
+        <div class="breaking_news">
+            <h2>{% trans "Breaking News" %}</h2>
+        </div>
+        <div class="marquee">
+            <div class="marquee1"><a class="breaking" href="/single">>>The standard chunk of Lorem Ipsum used since the
+                1500s is reproduced..</a></div>
+            <div class="marquee2"><a class="breaking" href="/single">>>At vero eos et accusamus et iusto qui blanditiis
+                praesentium voluptatum deleniti atque..</a></div>
+            <div class="clearfix"></div>
+            {% for item in list %}
+
+            {% endfor %}
+        </div>
+        <div class="clearfix"></div>
+        <script type="text/javascript" src="{% static 'js/jquery.marquee.min.js' %}"></script>
+        <script>
+>>>>>>> Stashed changes
 			  $('.marquee').marquee({ pauseOnHover: true });
 			  //@ sourceURL=pen.js
-			</script>
-		</div>
-	</div>
-	<!-- content-section-starts-here -->
 
-    {% block content %}
-    
-    {% endblock %}
 
-	<!-- content-section-ends-here -->
+        </script>
+    </div>
+</div>
+<!-- content-section-starts-here -->
 
+{% block content %}
+
+{% endblock %}
+
+<<<<<<< Updated upstream
 	<!-- footer-section-starts-here -->
 	<div class="footer">
 		<div class="footer-top">
@@ -280,6 +455,91 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<!-- footer-section-ends-here -->
 	<script type="text/javascript">
+=======
+<!-- content-section-ends-here -->
+
+<!-- footer-section-starts-here -->
+<div class="footer">
+    <div class="footer-top">
+        <div class="wrap">
+            <div class="col-md-3 col-xs-6 col-sm-4 footer-grid">
+                <h4 class="footer-head">{% trans "About Us" %}</h4>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout.</p>
+                <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                    opposed to using 'Content here.</p>
+            </div>
+            <div class="col-md-2 col-xs-6 col-sm-2 footer-grid">
+                <h4 class="footer-head">{% trans "Categories" %}</h4>
+                <ul class="cat">
+                    <li><a href="/about">{% trans "About" %}</a></li>
+                    <li><a href="/technology">{% trans "Technology" %}</a></li>
+                    <li><a href="/entertainment">{% trans "Entertainment" %}</a></li>
+                    <li><a href="/sports">{% trans "Careers" %}</a></li>
+                    <li><a href="/shortcodes">{% trans "Operations" %}</a></li>
+                    <li><a href="/fashion">{% trans "Organisations" %}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-xs-6 col-sm-6 footer-grid">
+                <h4 class="footer-head">Flickr Feed</h4>
+                <ul class="flickr">
+                    <li><a href="#"><img src="{% static 'images/bus4.jpg' %}"></a></li>
+                    <li><a href="#"><img src="{% static 'images/bus2.jpg' %}"></a></li>
+                    <li><a href="#"><img src="{% static 'images/bus3.jpg' %}"></a></li>
+                    <li><a href="#"><img src="{% static 'images/tec4.jpg' %}"></a></li>
+                    <li><a href="#"><img src="{% static 'images/tec2.jpg' %}"></a></li>
+                    <li><a href="#"><img src="{% static 'images/tec3.jpg' %}"></a></li>
+                    <li><a href="#"><img src="{% static 'images/bus2.jpg' %}"></a></li>
+                    <li><a href="#"><img src="{% static 'images/bus3.jpg' %}"></a></li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-12 footer-grid">
+                <h4 class="footer-head">{% trans "Contact Us" %}</h4>
+                <span class="hq">{% trans "Our headquaters" %}</span>
+                <address>
+                    <ul class="location">
+                        <li><span class="glyphicon glyphicon-map-marker"></span></li>
+                        <li>Central Business District in Yaounde not far from the Intendance's pharmacy</li>
+                        <div class="clearfix"></div>
+                    </ul>
+                    <ul class="location">
+                        <li><span class="glyphicon glyphicon-earphone"></span></li>
+                        <li>+237 561 111 235</li>
+                        <div class="clearfix"></div>
+                    </ul>
+                    <ul class="location">
+                        <li><span class="glyphicon glyphicon-envelope"></span></li>
+                        <li><a href="mailto:info@example.com">mail@navy.mil.cm</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </address>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="wrap">
+            <div class="copyrights col-md-6">
+                <p> © {% now 'Y' %} {% trans "Cameroon Navy" %}. {% trans "All Rights Reserved | Design by" %} <a
+                        href="http://w3layouts.com/"> W3layouts</a></p>
+            </div>
+            <div class="footer-social-icons col-md-6">
+                <ul>
+                    <li><a class="facebook" href="https://www.facebook.com/cameroonnavy/"></a></li>
+                    <li><a class="twitter" href="#"></a></li>
+                    <li><a class="flickr" href="#"></a></li>
+                    <li><a class="googleplus" href="#"></a></li>
+                    <li><a class="dribbble" href="#"></a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- footer-section-ends-here -->
+<script type="text/javascript">
+>>>>>>> Stashed changes
 		$(document).ready(function() {
 				/*
 				var defaults = {
@@ -291,6 +551,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				*/
 		$().UItoTop({ easingType: 'easeOutQuart' });
 });
+
+
 </script>
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 

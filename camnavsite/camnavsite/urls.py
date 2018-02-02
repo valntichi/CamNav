@@ -19,8 +19,12 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from main_app.views import HomeView, AboutView, ContactView, BusinessView, SportView, TechnologyView, EntertainmentView,\
 ShortCodeView, FashionView, SingleView, PrivacyPolicyView
+from django.conf.urls.i18n import i18n_patterns
 
-urlpatterns = [
+
+from main_app.views import LoginView, ArticleViewSet, PhotoViewSet, PeopleView, NewsletterViewSet
+
+urlpatterns = i18n_patterns (
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name="home"),
     url(r'^about/$', AboutView.as_view(), name="about"),
@@ -33,7 +37,13 @@ urlpatterns = [
     url(r'^fashion/$', FashionView.as_view(), name="fashion"),
     url(r'^single/$', SingleView.as_view(), name="single"),
     url(r'^privacy-policy/$', PrivacyPolicyView.as_view(), name="privacy-policy"),
+    url(r'^login/$', LoginView.as_view(), name="login"),
+    # url(r'^translate/$', my_view, name="translate"),
 
 
-]
+    url(r'^api/v1/articles/$', ArticleViewSet.as_view({'get': 'list', 'post': 'create'}), name="article"),
+    url(r'^api/v1/photos/$', PhotoViewSet.as_view({'get': 'list', 'post': 'create'}), name="photo"),
+    url(r'^newsletter/$', NewsletterViewSet.as_view({'get': 'list', 'post': 'create'}), name="newsletter"),
+
+)
 urlpatterns += staticfiles_urlpatterns()

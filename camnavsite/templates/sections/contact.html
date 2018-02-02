@@ -1,8 +1,10 @@
 {% extends "base.html"%}
 
 {% load staticfiles %}
+{% load i18n %}
 
 {% block content %}
+<<<<<<< Updated upstream
 	<!-- content-section-starts-here -->
 	<div class="main-body">
 		<div class="wrap">
@@ -49,6 +51,64 @@
 	 	</div>
 		<div class="clearfix"></div>
      </div>
+=======
+<!-- content-section-starts-here -->
+<div class="main-body">
+    <div class="wrap">
+        <ol class="breadcrumb">
+            <li><a href="/">{% trans "Home" %}</a></li>
+            <li class="active">{% trans "Contact Us" %}</li>
+        </ol>
+
+        <!--contact-section-starts-->
+        <div class="contact-section">
+            <header>
+                <h2 class="heading text-center">{% trans "Find Us Here" %}</h2>
+            </header>
+            <div class="map">
+                <iframe src="https://maps.google.com/maps?q=Yaounde&amp;ie=UTF8&amp;&amp;output=embed"></iframe>
+            </div>
+            <div class="contact_grid">
+                <div class="col-md-8 contact-top">
+                    <h3>{% trans "Send us a message" %}</h3>
+                    <p class="contact_msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy</p>
+                    <form action="/contact" method="post">
+                        <div class="to">
+                            <input type="text" class="text" value="Name" onfocus="this.value = '';"
+                                   onblur="if (this.value == '') {this.value = 'Name';}">
+                            <input type="text" class="text" value="Email" onfocus="this.value = '';"
+                                   onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:20px">
+                            <input type="text" class="text" value="Subject" onfocus="this.value = '';"
+                                   onblur="if (this.value == '') {this.value = 'Subject';}" style="margin-left:20px">
+                        </div>
+                        <div class="text">
+                            <textarea onfocus="this.value = '';"
+                                      onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
+                        </div>
+                        <div class="form-submit1">
+                            <input name="submit" type="submit" id="submit" value="{% trans 'Submit Your Message' %}"><br>
+                            <p class="m_msg">Make sure you put a valid email</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+                <div class="col-md-4 contact-top_right">
+                    <h3>contact info</h3>
+                    <p>diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
+                        ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
+                    <ul class="contact_info">
+                        <li><span>+1-900-235-2456</span></li>
+                        <li><span class="msg"><a href="malito:mail@example.com">mail(at)example.com</a></span></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!--contact-section-ends-->
+    </div>
+>>>>>>> Stashed changes
 </div>
 
 			<!--contact-section-ends-->
