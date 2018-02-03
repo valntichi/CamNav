@@ -1,10 +1,16 @@
 from django.shortcuts import render, redirect
+from django.utils.translation import gettext as _
+
 from django.views.generic import TemplateView, View
 
 # Create your views here.
+from rest_framework.parsers import MultiPartParser, FormParser
+
+from .mixins import ExampleMixin
 
 
-class HomeView(TemplateView):
+class HomeView(ExampleMixin, TemplateView):
+    print _("Good morning")
     template_name = "home.html"
 
 
@@ -46,7 +52,6 @@ class SingleView(TemplateView):
 
 class PrivacyPolicyView(TemplateView):
     template_name = "sections/privacy-policy.html"
-
 
 '''
 login API
@@ -106,12 +111,11 @@ class ArticleViewSet(viewsets.ModelViewSet):
 
 from .serializers import FileListSerializer, PhotoSerializer
 from .models import Photo
-from django.http.multipartparser import MultiPartParser
 
 
 class PhotoViewSet(viewsets.ModelViewSet):
     serializer_class = PhotoSerializer
-    # parser_classes = (MultiPartParser, FormParser,)
+    parser_classes = (MultiPartParser, FormParser,)
     queryset=Photo.objects.all()
 
     def create(self, request, *args, **kwargs):
@@ -148,7 +152,16 @@ class PeopleView(TemplateView):
 
     template_name = "other/people.html"
 
+    def get_context_data(self, **kwargs):
+        context = {}
+        # context = self.get_context_data(**kwargs)
+        context['people'] = Person.objects.all()
+        return context
 
 
+from django.http import HttpResponse
 
 
+def my_view(request):
+    output = _("Welcome to my site.")
+    return HttpResponse(output)

@@ -45,6 +45,19 @@ Open database
 
 ### Create templates
 
+
+### Heroku
+
+```
+heroku login
+
+heroku apps:create navy-cm
+
+git push heroku master
+```
+
+
+
 ### AB Collection
 lulu.tngnt.co
 

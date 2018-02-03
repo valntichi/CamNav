@@ -1,10 +1,10 @@
-
 {% extends "base.html"%}
 
 {% load staticfiles %}
 
-{% block content %}
+{% load i18n %}
 
+{% block content %}
 <!-- content-section-starts-here -->
 <div class="main-body">
     <div class="wrap">
@@ -47,13 +47,10 @@
                 </div>
             </div>
 
-				</div>
-			</div>
+            {% include "sections/sidebar.html" %}
 
-	{% include "sections/sidebar.html" %}
-			<div class="clearfix"></div>
-		</div>		
-		</div>
-		</div>
+        </div>
+    </div>
+</div>
 <!-- content-section-ends-here -->
 {% endblock %}

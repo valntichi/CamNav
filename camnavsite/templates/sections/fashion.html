@@ -3,7 +3,6 @@
 {% load staticfiles %}
 
 {% block content %}
-
 <!-- content-section-starts-here -->
 <div class="main-body">
     <div class="wrap">
@@ -161,7 +160,6 @@
                     </div>
                     <link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen"/>
                     <script type="text/javascript">
->>>>>>> Stashed changes
 							 $(window).load(function() {
 								$("#flexiselDemo").flexisel({
 									visibleItems: 4,
@@ -187,26 +185,27 @@
 								});
 								
 							 });
-							  </script>
-							 <script type="text/javascript" src="{% static 'assets/js/jquery.flexisel.js' %}"></script>
-							 
-					 <div class="course_demo1">
-								  <ul id="flexiselDemo1">	
-									 <li>
-										<a href="/single"><img src="{% static 'assets/images/f1.jpg' %}" alt="" /></a>							
-									 </li>
-									 <li>
-										<a href="/single"><img src="{% static 'assets/images/f4.jpg' %}" alt="" /></a>
-									  </li>	
-									 <li>
-										<a href="/single"><img src="{% static 'assets/images/f7.jpg' %}" alt="" /></a>
-									 </li>	
-									 <li>
-										<a href="/single"><img src="{% static 'assets/images/f5.jpg' %}" alt="" /></a>
-									 </li>	
-								 </ul>
-							 </div>
-							 <script type="text/javascript">
+
+                    </script>
+                    <script type="text/javascript" src="{% static 'js/jquery.flexisel.js' %}"></script>
+
+                    <div class="course_demo1">
+                        <ul id="flexiselDemo1">
+                            <li>
+                                <a href="/single"><img src="{% static 'images/f1.jpg' %}" alt=""/></a>
+                            </li>
+                            <li>
+                                <a href="/single"><img src="{% static 'images/f4.jpg' %}" alt=""/></a>
+                            </li>
+                            <li>
+                                <a href="/single"><img src="{% static 'images/f7.jpg' %}" alt=""/></a>
+                            </li>
+                            <li>
+                                <a href="/single"><img src="{% static 'images/f5.jpg' %}" alt=""/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <script type="text/javascript">
 							 $(window).load(function() {
 								$("#flexiselDemo1").flexisel({
 									visibleItems: 4,
@@ -232,8 +231,9 @@
 								});
 								
 							 });
-							  </script>
-					</div>
+
+                    </script>
+                </div>
 
 
                 <div class="life-style">
@@ -391,9 +391,8 @@
             </div>
                         {% include "sections/sidebar.html" %}
 
-			<div class="clearfix"></div>
-		</div>	
-		</div>
-		</div>
-	<!-- content-section-ends-here -->
+        </div>
+    </div>
+</div>
+<!-- content-section-ends-here -->
 {% endblock %}

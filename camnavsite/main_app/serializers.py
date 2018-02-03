@@ -7,8 +7,9 @@ class ArticleSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class FileListSerializer (serializers.Serializer) :
-    image = serializers.ListField(child=serializers.FileField( max_length=100000,
+class FileListSerializer ( serializers.Serializer ) :
+    image = serializers.ListField(
+                       child=serializers.FileField( max_length=100000,
                                          allow_empty_file=False,
                                          use_url=False )
                                 )

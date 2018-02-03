@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 # Create your models here.
 
-# business, sports, fashion, etc
 
 class Category(models.Model):
     # business, sports, fashion, etc
@@ -17,6 +16,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class Article(models.Model):
     author = models.ForeignKey(User)
     category = models.ForeignKey(Category)
@@ -24,16 +24,15 @@ class Article(models.Model):
     content = models.TextField()
     breaking = models.BooleanField(default=False)
     created_on = models.DateTimeField(default=timezone.now)
-
     hits = models.IntegerField()
 
     def __str__(self):
         return self.title + " --- " + self.content
 
+
 class MyTable(models.Model):
     item = models.CharField(max_length=200)
     class Meta:
-
         db_table = "my_table"
         permissions = (
             ("can_drive", "Can drive"),
@@ -60,4 +59,3 @@ class Person(models.Model):
 class Newsletter(models.Model):
     email = models.EmailField()
     date_created = models.DateTimeField(default=timezone.now)
-
