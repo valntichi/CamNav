@@ -4,13 +4,14 @@ from django.utils.translation import gettext as _
 from django.views.generic import TemplateView, View
 
 # Create your views here.
-from rest_framework.parsers import MultiPartParser, FormParser
+# from rest_framework.parsers import MultiPartParser, FormParser
 
 from .mixins import ExampleMixin
 
 
 class HomeView(ExampleMixin, TemplateView):
     print _("Good morning")
+    print 'now :)'
     template_name = "home.html"
 
 
@@ -79,70 +80,70 @@ class LoginView(View):
 
 
 from .models import Article, Category
-from .serializers import ArticleSerializer
-from rest_framework import viewsets
-from rest_framework.response import Response
+# from .serializers import ArticleSerializer
+# from rest_framework import viewsets
+# from rest_framework.response import Response
 from django.contrib.auth.models import User
 
 
-class ArticleViewSet(viewsets.ModelViewSet):
-    queryset = Article.objects.all()
-    serializer_class = ArticleSerializer
+# class ArticleViewSet(viewsets.ModelViewSet):
+#     queryset = Article.objects.all()
+#     serializer_class = ArticleSerializer
+#
+#     def create(self, request, *args, **kwargs):
+#
+#         serializer = ArticleSerializer(data=request.data)
+#         if serializer.is_valid():
+#             article = Article()
+#             article.breaking = serializer.data["breaking"]
+#             article.title = serializer.data["title"]
+#             article.content = serializer.data["content"]
+#
+#
+#             article.author = User.objects.get(id=serializer.data["author"])
+#             article.category = Category.objects.get(id=serializer.data["category"])
+#             article.save()
+#             # serializer = ArticleSerializer(data=article)
+#             serializer.data["id"] = article.id
+#             serializer.data["created_on"] = article.created_on
+#             return Response(data=serializer.data, status=201)
+#         else:
+#             return Response(serializer.errors, 400)
 
-    def create(self, request, *args, **kwargs):
-
-        serializer = ArticleSerializer(data=request.data)
-        if serializer.is_valid():
-            article = Article()
-            article.breaking = serializer.data["breaking"]
-            article.title = serializer.data["title"]
-            article.content = serializer.data["content"]
+# from .serializers import FileListSerializer, PhotoSerializer
+# from .models import Photo
 
 
-            article.author = User.objects.get(id=serializer.data["author"])
-            article.category = Category.objects.get(id=serializer.data["category"])
-            article.save()
-            # serializer = ArticleSerializer(data=article)
-            serializer.data["id"] = article.id
-            serializer.data["created_on"] = article.created_on
-            return Response(data=serializer.data, status=201)
-        else:
-            return Response(serializer.errors, 400)
-
-from .serializers import FileListSerializer, PhotoSerializer
-from .models import Photo
-
-
-class PhotoViewSet(viewsets.ModelViewSet):
-    serializer_class = PhotoSerializer
-    parser_classes = (MultiPartParser, FormParser,)
-    queryset=Photo.objects.all()
-
-    def create(self, request, *args, **kwargs):
-
-        serializer = PhotoSerializer(data=request.data)
-        if serializer.is_valid():
-            print serializer.data
-            return Response(data=serializer.data, status=201)
-        else:
-            return Response(serializer.errors, 400)
+# class PhotoViewSet(viewsets.ModelViewSet):
+#     serializer_class = PhotoSerializer
+#     # parser_classes = (MultiPartParser, FormParser,)
+#     queryset=Photo.objects.all()
+#
+#     def create(self, request, *args, **kwargs):
+#
+#         serializer = PhotoSerializer(data=request.data)
+#         if serializer.is_valid():
+#             print serializer.data
+#             return Response(data=serializer.data, status=201)
+#         else:
+#             return Response(serializer.errors, 400)
 
 
 from .models import Newsletter
-from .serializers import NewsletterSerializer
+# from .serializers import NewsletterSerializer
 
 
-class NewsletterViewSet(viewsets.ModelViewSet):
-    serializer_class = NewsletterSerializer
-    queryset = Newsletter.objects.all()
-
-    def create(self, request, *args, **kwargs):
-        serializer = NewsletterSerializer(data=request.data)
-        if serializer.is_valid():
-            print serializer.data
-            return Response(data=serializer.data, status=201)
-        else:
-            return Response(serializer.errors, 400)
+# class NewsletterViewSet(viewsets.ModelViewSet):
+#     serializer_class = NewsletterSerializer
+#     queryset = Newsletter.objects.all()
+#
+#     def create(self, request, *args, **kwargs):
+#         serializer = NewsletterSerializer(data=request.data)
+#         if serializer.is_valid():
+#             print serializer.data
+#             return Response(data=serializer.data, status=201)
+#         else:
+#             return Response(serializer.errors, 400)
 
 
 from .models import Person

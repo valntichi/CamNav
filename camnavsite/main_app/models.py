@@ -41,10 +41,10 @@ class MyTable(models.Model):
         )
 
 
-class Photo(models.Model):
-    article = models.ForeignKey(Article, related_name='article_img')
-    image = models.ImageField(upload_to="/uploads/")
-    description = models.CharField(max_length=100, blank=True)
+# class Photo(models.Model):
+#     article = models.ForeignKey(Article, related_name='article_img')
+#     image = models.ImageField(upload_to="/uploads/")
+#     description = models.CharField(max_length=100, blank=True)
 
 
 class Advert(models.Model):

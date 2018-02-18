@@ -145,3 +145,45 @@ Textes officiels
     > decrets
     > arretes
 A propos
+
+
+## Docker
+
+docker run -t -i -v <host_dir>:<container_dir>  ubuntu /bin/bash
+
+$ docker run -i -t --volume-driver=cifs -v hostname/share:/data ubuntu /bin/bash
+
+
+mount -t cifs //<host>/<path> /<localpath> -o user=<user>,password=<user>
+
+
+docker-compose up -d
+
+## Gunicorn
+
+gunicorn camnavsite.wsgi:application -b 0:8011
+
+
+
+# Create log folder for supervisor, jenkins and docker
+RUN mkdir -p /var/log/supervisor
+RUN mkdir -p /var/log/docker
+RUN mkdir -p /var/log/jenkins
+# Copy the supervisor.conf file into Docker
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+..
+# Start supervisord when running the container
+CMD /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
+
+------------
+
+# NGINX
+
+create config file in:
+
+    /etc/nginx/sites-available/navy-cm.conf
+
+sudo ln -s /etc/nginx/sites-available/navy-cm.conf /etc/nginx/sites-enabled/
+
+
+/usr/local/etc/nginx/nginx.conf

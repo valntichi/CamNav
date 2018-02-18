@@ -19,10 +19,14 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.i18n import i18n_patterns
 
 
-from main_app.views import HomeView, AboutView, ContactView, BusinessView, SportView, TechnologyView, EntertainmentView,\
-ShortCodeView, FashionView, SingleView, PrivacyPolicyView
+from main_app.views import (HomeView, AboutView, ContactView, BusinessView, SportView,
+                            TechnologyView, EntertainmentView,\
+                            ShortCodeView, FashionView, SingleView,
+                            PrivacyPolicyView)
 
-from main_app.views import LoginView, ArticleViewSet, PhotoViewSet, PeopleView, my_view, NewsletterViewSet
+from main_app.views import (LoginView, my_view,)
+    # ArticleViewSet, PhotoViewSet, PeopleView, \
+    # NewsletterViewSet
 
 urlpatterns = i18n_patterns (
     url(r'^admin/', admin.site.urls),
@@ -41,11 +45,11 @@ urlpatterns = i18n_patterns (
     url(r'^translate/$', my_view, name="translate"),
 
 
-    url(r'^api/v1/articles/$', ArticleViewSet.as_view({'get': 'list', 'post': 'create'}), name="article"),
-    url(r'^api/v1/photos/$', PhotoViewSet.as_view({'get': 'list', 'post': 'create'}), name="photo"),
-    url(r'^newsletter/$', NewsletterViewSet.as_view({'get': 'list', 'post': 'create'}), name="newsletter"),
+    # url(r'^api/v1/articles/$', ArticleViewSet.as_view({'get': 'list', 'post': 'create'}), name="article"),
+    # url(r'^api/v1/photos/$', PhotoViewSet.as_view({'get': 'list', 'post': 'create'}), name="photo"),
+    # url(r'^newsletter/$', NewsletterViewSet.as_view({'get': 'list', 'post': 'create'}), name="newsletter"),
 
-    url(r'^people/$', PeopleView.as_view(), name="people"),
+    # url(r'^people/$', PeopleView.as_view(), name="people"),
 
 )
 urlpatterns += staticfiles_urlpatterns()
