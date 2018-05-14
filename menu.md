@@ -18,12 +18,12 @@ A propos
 
 ---------
 
-Actualite
-Page du CEMM
-Organisation de la marine
-Information utiles
-Historique
-Action de l'Etat en mer
-CCR Actualites
-Formation operationnelles
-Concours metiers
+Actualite                   -> /
+Page du CEMM                -> /cemm
+Organisation de la marine   -> /organisation
+Information utiles          -> /information
+Historique                  -> /historique
+Action de l'Etat en mer     -> /action-etat-mer
+CCR Actualites              -> /ccr
+Formation operationnelles   -> /formations
+Concours metiers            -> /concours

@@ -69,7 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="top-menu">
                 <ul>
                     <li><a href="/">{% trans "Accueil" %}</a></li>
-                    <li><a href="/about">{% trans "A propos" %}</a></li>
+                    <li><a href="/organisation">{% trans "Organisation" %}</a></li>
                     <li><a href="/privacy-policy">{% trans "Privacy Policy" %}</a></li>
                     <li><a href="/contact">{% trans "Nous contacter" %}</a></li>
                 </ul>
@@ -102,60 +102,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="/">{% trans "Accueil" %}</a></li>
-                            <li><a href="/sports">{% trans "Careers" %}</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Organisation" %}<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "A propos" %}<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="/entertainment">{% trans "Our leaders" %}</a></li>
+                                    <li><a href="/cemm">{% trans "Page du CEMM" %}</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="/entertainment">{% trans "Our forces" %}</a></li>
+                                    <li><a href="/information">{% trans "Informations" %}</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="/entertainment">{% trans "Our ships" %}</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/shortcodes">{% trans "Operations" %}</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Press Room" %}<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="/entertainment">{% trans "News" %}</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="/entertainment">{% trans "Blogs" %}</a></li>
+                                    <li><a href="/historique">{% trans "Historique" %}</a></li>
                                 </ul>
                             </li>
 
-                            <li class="dropdown">
-                                <a href="/business" class="dropdown-toggle" data-toggle="dropdown">{% trans "About" %}<b
-                                        class="caret"></b></a>
-                                <ul class="dropdown-menu multi-column columns-2">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <ul class="multi-column-dropdown">
-                                                <li><a href="/business">Our staff</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="/business">Our responsibilities</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="/business">Our band</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="/shortcodes">Contact us</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <ul class="multi-column-dropdown">
-                                                <li><a href="/business">features</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="/entertainment">{% trans "Movies" %}</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="/sports">{% trans "careers" %}</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="/business">Reviews</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="/business">Stock</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </li>
-                            <li><a href="/technology">{% trans "Technology" %}</a></li>
+                            <li><a href="/action-etat-mer">{% trans "Action de l'Etat en Mer" %}</a></li>
+                            <li><a href="/ccr">{% trans "CCR Actualites" %}</a></li>
+                            <li><a href="/formations">{% trans "Formation operationnelles" %}</a></li>
+                            <li><a href="/concours">{% trans "Concours metiers" %}</a></li>
                             <div class="clearfix"></div>
                         </ul>
                         <div class="search">
@@ -211,8 +172,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <script>
 			  $('.marquee').marquee({ pauseOnHover: true });
 			  //@ sourceURL=pen.js
-
-
         </script>
     </div>
 </div>
@@ -241,7 +200,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <li><a href="/about">{% trans "About" %}</a></li>
                     <li><a href="/technology">{% trans "Technology" %}</a></li>
                     <li><a href="/entertainment">{% trans "Entertainment" %}</a></li>
-                    <li><a href="/sports">{% trans "Careers" %}</a></li>
+                    <li><a href="/action-etat-mer">{% trans "Careers" %}</a></li>
                     <li><a href="/shortcodes">{% trans "Operations" %}</a></li>
                     <li><a href="/fashion">{% trans "Organisations" %}</a></li>
                 </ul>
@@ -261,8 +220,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </ul>
             </div>
             <div class="col-md-3 col-xs-12 footer-grid">
-                <h4 class="footer-head">{% trans "Contact Us" %}</h4>
-                <span class="hq">{% trans "Our headquaters" %}</span>
+                <h4 class="footer-head">{% trans "Contactez Nous" %}</h4>
+                <span class="hq">{% trans "Notre quartier general" %}</span>
                 <address>
                     <ul class="location">
                         <li><span class="glyphicon glyphicon-map-marker"></span></li>
@@ -287,7 +246,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="footer-bottom">
         <div class="wrap">
             <div class="copyrights col-md-6">
-                <p> © {% now 'Y' %} {% trans "Cameroon Navy" %}. {% trans "All Rights Reserved | Design by" %} <a
+                <p> © {% now 'Y' %} {% trans "Marine Nationale Camerounaise" %}. {% trans "All Rights Reserved | Design by" %} <a
                         href="http://w3layouts.com/"> W3layouts</a></p>
             </div>
             <div class="footer-social-icons col-md-6">
