@@ -14,11 +14,11 @@ class HomeView(ExampleMixin, TemplateView):
 
 
 class PageCEMMView(TemplateView):
-    template_name = "sections/about.html"
+    template_name = "sections/cemm.html"
 
 
 class OrganisationView(TemplateView):
-    template_name = "sections/contact.html"
+    template_name = "sections/presentation.html"
 
 
 class InformationView(TemplateView):
@@ -26,7 +26,7 @@ class InformationView(TemplateView):
 
 
 class ActionEtatView(TemplateView):
-    template_name = "sections/sports.html"
+    template_name = "sections/aem.html"
 
 
 class CCRView(TemplateView):
@@ -34,10 +34,10 @@ class CCRView(TemplateView):
 
 
 class HistoriqueView(TemplateView):
-    template_name = "sections/entertainment.html"
+    template_name = "sections/historique.html"
 
 
-class CouncoursView(TemplateView):
+class ConcoursView(TemplateView):
     template_name = "sections/fashion.html"
 
 
@@ -52,6 +52,13 @@ class SingleView(TemplateView):
 class PrivacyPolicyView(TemplateView):
     template_name = "sections/privacy-policy.html"
 
+
+class ContactView(TemplateView):
+    template_name = "sections/contact.html"
+
+
+class TankerView(TemplateView):
+    template_name = "sections/tanker.html"
 '''
 login API
 '''

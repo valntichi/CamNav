@@ -20,8 +20,8 @@ from django.conf.urls.i18n import i18n_patterns
 
 
 from main_app.views import (HomeView,PageCEMMView,OrganisationView, InformationView,
-                            ActionEtatView, CCRView,
-                            HistoriqueView,FormationView, CouncoursView
+                            ActionEtatView, CCRView, SingleView,
+                            HistoriqueView,FormationView, ConcoursView, ContactView
                             )
 
 
@@ -35,7 +35,9 @@ urlpatterns = i18n_patterns (
     url(r'^action-etat-mer/$', ActionEtatView.as_view(), name="action-etat-mer"),
     url(r'^ccr/$', CCRView.as_view(), name="ccr"),
     url(r'^formations/$', FormationView.as_view(), name="formations"),
-    url(r'^concours/$', CouncoursView.as_view(), name="councours"),
+    url(r'^concours/$', ConcoursView.as_view(), name="councours"),
+    url(r'^contact/$', ContactView.as_view(), name="contact"),
+    url(r'^single/$', SingleView.as_view(), name="single"),
 
 )
 urlpatterns += staticfiles_urlpatterns()
