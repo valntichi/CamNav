@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-23 17:58+0200\n"
+"PO-Revision-Date: 2018-02-05 19:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: camnavsite/settings.py:119
+msgid "English"
+msgstr ""
+
+#: camnavsite/settings.py:120
+msgid "French"
+msgstr ""
+
+#: camnavsite/settings.py:121
+msgid "Russian"
+msgstr ""
+
+#: main_app/views.py:13
+msgid "Good morning"
+msgstr "Bonjour"
+
+#: main_app/views.py:167
+msgid "Welcome to my site."
+msgstr "Bienvenue sur mon site"
+
+#: templates/base.html:71 templates/base.html:104
+#: templates/sections/about.html:12 templates/sections/business.html:11
+#: templates/sections/contact.html:11
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:72 templates/base.html:233
+#: templates/sections/about.html:18
+msgid "About Us"
+msgstr "A propos"
+
+#: templates/base.html:73
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+#: templates/base.html:74 templates/base.html:265
+#: templates/sections/contact.html:12
+msgid "Contact Us"
+msgstr "Contactez nous"
+
+#: templates/base.html:105 templates/base.html:245
+#: templates/sections/sidebar.html:16
+msgid "Careers"
+msgstr "Carrière"
+
+#: templates/base.html:107
+msgid "Organisation"
+msgstr ""
+
+#: templates/base.html:110
+msgid "Our leaders"
+msgstr "Nos dirigeants"
+
+#: templates/base.html:112
+msgid "Our forces"
+msgstr ""
+
+#: templates/base.html:114
+msgid "Our ships"
+msgstr ""
+
+#: templates/base.html:116
+msgid "celebrity"
+msgstr "célébrités"
+
+#: templates/base.html:119 templates/sections/sidebar.html:18
+msgid "Operations"
+msgstr ""
+
+#: templates/base.html:120
+msgid "Press Room"
+msgstr ""
+
+#: templates/base.html:122
+msgid "News"
+msgstr ""
+
+#: templates/base.html:124
+msgid "Blogs"
+msgstr ""
+
+#: templates/base.html:128 templates/sections/about.html:13
+msgid "About"
+msgstr "À propos"
+
+#: templates/base.html:147
+msgid "Movies"
+msgstr "Films"
+
+#: templates/base.html:149
+msgid "careers"
+msgstr "carrière"
+
+#: templates/base.html:159 templates/base.html:243 templates/home.html:252
+#: templates/sections/sidebar.html:14
+msgid "Technology"
+msgstr "Technologie"
+
+#: templates/base.html:198
+msgid "Breaking News"
+msgstr "Dernières nouvelles"
+
+#: templates/base.html:240 templates/sections/sidebar.html:10
+msgid "Categories"
+msgstr "Catégories"
+
+#: templates/base.html:242 templates/sections/business.html:12
+#: templates/sections/business.html:17 templates/sections/sidebar.html:13
+msgid "Business"
+msgstr "Affaires"
+
+#: templates/base.html:244 templates/sections/sidebar.html:15
+msgid "Entertainment"
+msgstr "Diverstissement"
+
+#: templates/base.html:246
+msgid "Health"
+msgstr "Santé"
+
+#: templates/base.html:247
+msgid "Fashion"
+msgstr "Mode"
+
+#: templates/base.html:266
+msgid "Our headquaters"
+msgstr "Notre quartier général"
+
+#: templates/base.html:291
+msgid "Cameroon Navy"
+msgstr "Marine Camerounaise"
+
+#: templates/base.html:291
+msgid "All Rights Reserved | Design by"
+msgstr "Tous droits réservés | Conçu par"
+
+#: templates/sections/about.html:19
+msgid "LITTLE BIT ABOUT US"
+msgstr ""
+
+#: templates/sections/about.html:36
+msgid "Express News"
+msgstr ""
+
+#: templates/sections/contact.html:18
+msgid "Find Us Here"
+msgstr "Trouvez  nous ici"
+
+#: templates/sections/contact.html:25
+msgid "Send us a message"
+msgstr "Envoyer nous un message"
+
+#: templates/sections/contact.html:42
+msgid "Submit Your Message"
+msgstr "Soumettre Le message"
+
+#: templates/sections/sidebar.html:17
+msgid "Organisations"
+msgstr ""
+
+#: templates/sections/sidebar.html:22
+msgid "Newsletter"
+msgstr "Lettre d'informations"
+
+#: templates/sections/sidebar.html:23
+msgid "Sign up to receive our free newsletters!"
+msgstr "Inscrivez-vous pour recevoir nos newsletters gratuites!"
+
+#: templates/sections/sidebar.html:34
+msgid "Popular Posts"
+msgstr "Articles populaires"
+
+#: templates/sections/sidebar.html:102
+msgid "Recent Posts"
+msgstr "Articles récents"
+
+#: templates/sections/sidebar.html:334
+msgid "Tags"
+msgstr "Balises"
+
+#: templates/sections/sidebar.html:361
+msgid "popular News"
+msgstr "Plus lus"
+
+#~ msgid "This is the title."
+#~ msgstr "C’est le titre."
+
+#~ msgid "Another action"
+#~ msgstr "Une autre action"
+
+#~ msgid "Articles"
+#~ msgstr "Articles"
+
+#~ msgid "Sports"
+#~ msgstr "Sports"

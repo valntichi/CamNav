@@ -1,0 +1,16 @@
+version: "2"
+services:
+  app:
+    build: .
+    command: python manage.py runserver 0:8000
+    ports:
+      - "8090:8000"
+    volumes:
+      - .:/code
+      - /Users/patricktchankue/Downloads:/downloads
+      - /Volumes:/mnt/example
+#      - https://www.dropbox.com/l/scl/AAC7xWCCjeC4akYivWsOf02ZhTKjImqNjHE:/dropbox
+    networks:
+      - default
+networks:
+  default:

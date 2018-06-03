@@ -1,0 +1,168 @@
+{% extends "base.html"%}
+
+{% load staticfiles %}
+
+{% block content %}
+<!-- content-section-starts-here -->
+<div class="main-body">
+    <div class="wrap">
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">Action de l'Etat en Mer</li>
+        </ol>
+        <div class="col-md-8 content-left">
+            <div class="articles sports">
+                <header>
+                    <h3 class="title-head">Action de l'Etat en Mer</h3>
+                </header>
+                <div class="article">
+                    <div class="article-left">
+                        <a href="/tanker"><img src="{% static 'images/sport1.jpg' %}"></a>
+                    </div>
+                    <div class="article-right">
+                        <div class="article-title">
+                            <p>On Feb 25, 2015 <a class="span_link" href="#"><span
+                                    class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span
+                                    class="glyphicon glyphicon-eye-open"></span>104 </a><a class="span_link"
+                                                                                           href="#"><span
+                                    class="glyphicon glyphicon-thumbs-up"></span>52</a></p>
+                            <a class="title" href="/single"> Recherche en mer</a>
+                        </div>
+                        <div class="article-text">
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s. Sections 1.10.32 and 1.10.33 from
+                                "de Finibus Bonorum et Malorum" exact original.....</p>
+                            <a href="/single"><img src="{% static 'images/more-blue.png' %}" alt=""/></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="article">
+                    <div class="article-left">
+                        <a href="/tanker"><img src="{% static 'images/marine/aem-0012-article.jpg' %}"></a>
+                    </div>
+                    <div class="article-right">
+                        <div class="article-title">
+                            <p>On Jun 21, 2015 <a class="span_link" href="#"><span
+                                    class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span
+                                    class="glyphicon glyphicon-eye-open"></span>181 </a><a class="span_link"
+                                                                                           href="#"><span
+                                    class="glyphicon glyphicon-thumbs-up"></span>89</a></p>
+                            <a class="title" href="/tanker">Tanker</a>
+                        </div>
+                        <div class="article-text">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.....</p>
+                            <a href="/single"><img src="{% static 'images/more-blue.png' %}" alt=""/></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="article">
+                    <div class="article-left">
+                        <a href="/tanker"><img src="{% static 'images/sport3.jpg' %}"></a>
+                    </div>
+                    <div class="article-right">
+                        <div class="article-title">
+                            <p>On Jan 17, 2015 <a class="span_link" href="#"><span
+                                    class="glyphicon glyphicon-comment"></span>1 </a><a class="span_link" href="#"><span
+                                    class="glyphicon glyphicon-eye-open"></span>144 </a><a class="span_link"
+                                                                                           href="#"><span
+                                    class="glyphicon glyphicon-thumbs-up"></span>74</a></p>
+                            <a class="title" href="/single">MV Pacific</a>
+                        </div>
+                        <div class="article-text">
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                pain was born.....</p>
+                            <a href="/single"><img src="{% static 'images/more-blue.png' %}" alt=""/></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                                <div class="article">
+                    <div class="article-left">
+                        <a href="/tanker"><img src="{% static 'images/sport3.jpg' %}"></a>
+                    </div>
+                    <div class="article-right">
+                        <div class="article-title">
+                            <p>On Jan 17, 2015 <a class="span_link" href="#"><span
+                                    class="glyphicon glyphicon-comment"></span>1 </a><a class="span_link" href="#"><span
+                                    class="glyphicon glyphicon-eye-open"></span>144 </a><a class="span_link"
+                                                                                           href="#"><span
+                                    class="glyphicon glyphicon-thumbs-up"></span>74</a></p>
+                            <a class="title" href="/single">Arraisonnement</a>
+                        </div>
+                        <div class="article-text">
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                pain was born.....</p>
+                            <a href="/single"><img src="{% static 'images/more-blue.png' %}" alt=""/></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+
+            <div class="photos">
+                <header>
+                    <h3 class="title-head">Photos</h3>
+                </header>
+                <div class="course_demo1">
+                    <ul id="flexiselDemo">
+                        <li>
+                            <a href="/single"><img src="{% static 'images/marine/aem-0012.jpg' %}" alt=""/></a>
+                        </li>
+                        <li>
+                            <a href="/single"><img src="{% static 'images/sg5.jpg' %}" alt=""/></a>
+                        </li>
+                        <li>
+                            <a href="/single"><img src="{% static 'images/sg6.jpg' %}" alt=""/></a>
+                        </li>
+                        <li>
+                            <a href="/single"><img src="{% static 'images/sg1.jpg' %}" alt=""/></a>
+                        </li>
+                    </ul>
+                </div>
+                <link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen"/>
+                <script type="text/javascript">
+							 $(window).load(function() {
+								$("#flexiselDemo").flexisel({
+									visibleItems: 4,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:480,
+											visibleItems: 2
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems: 2
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 3
+										}
+									}
+								});
+								
+							 });
+
+                </script>
+                <script type="text/javascript" src="{% static 'js/jquery.flexisel.js' %}"></script>
+            </div>
+
+        </div>
+
+                    {% include "sections/sidebar.html" %}
+
+    </div>
+</div>
+<!-- content-section-ends-here -->
+{% endblock %}

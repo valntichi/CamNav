@@ -1,0 +1,81 @@
+{% extends "base.html"%}
+
+{% load staticfiles %}
+
+{% load i18n %}
+
+{% block content %}
+<!-- content-section-starts-here -->
+<div class="main-body">
+    <div class="wrap">
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">Historique</li>
+        </ol>
+        <div class="col-md-8 content-left">
+            <div class="about">
+                <h2 class="head">{% trans "Historique" %}</h2>
+                <p>
+                    Après la création de l’Armée camerounaise par l’ordonnance n° 59/57 du 11 novembre 1959, la Marine a
+                    été effectivement mise sur pied le 05 mai 1961 dans un contexte de turbulence politique, avec entre
+                    autres missions, de surveiller la côte et de barrer la route à tous ceux qui amènent de l’étranger
+                    sur notre territoire les ferments de la révolte et du désordre ; d’apporter à l’Armée de terre le
+                    soutien qui lui manquait pour bloquer les infiltrations d’hommes et des matériels qui viennent
+                    quelques fois saper les courageuses actions entreprises pour éradiquer l’insécurité.
+                </p>
+                <div>
+                    <img src="{% static 'images/marine/historique_marine.png' %}">
+                </div>
+                    <p>L’évolution de la Marine est graduelle depuis sa création. Au plan des ressources humaines, de 25
+                    marins jusqu’en 1965, la Marine compte à ce jour plus de 5000 hommes biens formés, disponibles et
+                    aptes à armer tous types de navires de guerre. De même, au plan matériel, elle ne comptait au départ
+                    que trois vedettes côtières : « Patrie du Cameroun », « Vigilant », « Audacieux » et des bâtiments
+                    de débarquement de type LCVP (Landing craft vehicule and personnel) : « Indépendance » et
+                    « Réunification ». Par la suite, les vedettes « Le Brigadier » et « Le Moungo », appartenant
+                    respectivement à la marine marchande et à la douane camerounaise ont été mises à sa disposition,
+                    enrichissant ainsi sa flotte qui connait depuis lors, une progression appréciable.
+                    Confinée à Douala pendant plusieurs années avec une seule base, la Marine est désormais implantée
+                    sur tout le Littoral camerounais et comprend : des flottilles constituées d’unités navales et
+                    regroupées au sein des Forces de Surface ; des Bataillons de fusiliers marins sous le commandement
+                    des Forces de Fusiliers Marins et des Palmeurs de Combat ainsi que des éléments de soutien composés
+                    de trois Bases Navales, d’un Chantier Naval, des Ateliers Navals, des Ecoles et Centres
+                    d’instruction. Cet ensemble est placé sous le commandement d’un Etat- Major basé à Yaoundé.
+                    Avec des menaces courantes auxquelles notre pays doit faire face dans un village planétaire, de
+                    nouvelles missions ont été confiées à la Marine qui voit de ce fait son champ d’action s’étendre
+                    vers l’international. Dans la sous-région, la Marine assiste à la mutualisation des moyens avec
+                    certains Etats voisins pour la sécurisation du Golfe de Guinée, zone immensément riche et objet de
+                    toutes les convoitises. A ce titre, elle participe honorablement aux patrouilles conjointes de la
+                    Communauté Economique des Etats de l’Afrique Centrale(CEEAC).
+                    Depuis sa création jusqu’à nos jours, la Marine camerounaise a eu à sa tête commandants de la Marine
+                        ou des Forces Navales.</p>
+                <ol>
+                    <li>Enseigne de Vaisseau de 1ère classe (EV1) Germain, Français (1961-1962) ;</li>
+                    <li>EV1 Hubert, Français (1962-1963) ;</li>
+                    <li>Lieutenant de Vaisseau (LV) Gérard Thaler, Français (1963-1965) ;</li>
+                    <li>LV Truchon, Français (1965-1967) ;</li>
+                    <li>LV Blanc, Français (1967-1969) ;</li>
+                    <li>LV Martin, Français (1969-1971) ;</li>
+                    <li>LV Miossec, Français (1971-1973) ;</li>
+                    <li>LV Ndangang Pierre, Camerounais (1973-1980) ;</li>
+                    <li>Capitaine de Corvette N’gouah N’gally Guillaume (1980-1983).</li>
+                </ol>
+                <p>
+                    La Marine a ensuite connu trois Chefs D’Etat- Major de la Marine à savoir :
+                    Le Capitaine de Frégate N’gouah N’gally Guillaume, Chef d’Etat-Major par intérim du 05 novembre 1983 au
+                    23 septembre 1986. Admis à l’Ecole Supérieure de Guerre de Paris en août 1986, il est remplacé dans ses
+                    fonctions de Chef d’Etat- Major P.I. par un officier de l’Armée de Terre, le Colonel Epanya Tiki
+                    Constantin, du 23 septembre 1986 au 09 décembre 1986. A son retour, le Capitaine de Vaisseau N’gouah
+                    N’gally est reconduit à ce poste le 19 février 1988 et titularisé le 19 août 1992.
+                    La Marine est commandée par un Officier Général à partir du 05 février 1993, lorsque N’gouah N’gally
+                    Guillaume est promu Contre- Amiral. Il est remplacé depuis le 11 mars 2011 par l’actuel Chef
+                    d’Etat-Major de la Marine, le Contre- Amiral Mendoua Jean.
+                </p>
+            </div>
+        </div>
+
+        {% include "sections/sidebar.html" %}
+
+    </div>
+</div>
+<!-- content-section-ends-here -->
+{% endblock %}

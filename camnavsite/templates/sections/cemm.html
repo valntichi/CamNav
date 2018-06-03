@@ -1,0 +1,95 @@
+{% extends "base.html"%}
+
+{% load staticfiles %}
+
+{% load i18n %}
+
+{% block content %}
+<!-- content-section-starts-here -->
+<div class="main-body">
+    <div class="wrap">
+        <ol class="breadcrumb">
+            <li><a href="/">{% trans "Home" %}</a></li>
+            <li class="active">{% trans "Page du CEMM" %}</li>
+        </ol>
+        <div class="about-page">
+            <div class="col-md-8 content-left">
+                <div class="about">
+                    <h2 class="head">{% trans "Page du CEMM" %}</h2>
+                    <h5>{% trans "Biographie" %}</h5>
+                    <p>
+
+                        Contre-Amiral MENDOUA Jean
+                        <img src="{% static 'images/marine/ca_mendoua_j.jpg' %}" height="200"
+                             style="float:left;padding:7px">
+                        Chef d’Etat-Major<br/>
+
+                        Né le 23 Décembre 1956 à Ebolowa, dans la Région du Sud-Cameroun, le Contre-Amiral MENDOUA Jean, après de brillantes études primaires et secondaires, sortira nanti d’un Baccalauréat Scientifique du
+                        Lycée Général Leclerc de Yaoundé. Il entamera ensuite son parcours universitaire à la Faculté
+                        des Sciences de l’Université de Yaoundé, lequel sera interrompu par son admission à l’Ecole
+                        Navale de Brest en France en 1977, en qualité d’Elève Officier d’Active pour le compte de l’Etat
+                        camerounais.
+
+                        <br/>En 1985, ce cursus initial sera complété à l’Ecole des Officiers Fusiliers de Lorient où il
+                        obtient le diplôme d’Officier Fusilier Commando. Il est ensuite admis à suivre en Israël une
+                        formation dans les Forces Spéciales : Commando Anti-terroriste et Instructeur Tireur d’Elite.
+
+                        <br/>En 1991, il intègre l’Ecole des Troupes Aéroportées de Pau en France et en sort avec le
+                        Brevet Parachutiste et le Certificat d’Aptitude aux Troupes Aéroportées des Officiers d’Active.
+
+                        <br/>Ces différentes formations et stages lui permettront de poursuivre une carrière pleine,
+                        successivement à la Marine Nationale et à la Garde Présidentielle.
+
+                        <br/>A la Marine Nationale où commence sa carrière, il va servir dans les Forces Navales à bord
+                        de divers Patrouilleurs et Vedettes comme Officier et Commandant.
+
+                        <br/>En 1984, il est détaché au Régiment du Quartier Général de la capitale à Yaoundé.
+
+                        <br/>A la Garde Présidentielle, il participera avec un groupe d’Officiers sélectionnés, au
+                        chantier de mise sur pied de la nouvelle Garde Présidentielle après la dissolution de la Garde
+                        Républicaine.
+
+                        <br/>Au sein de la nouvelle Garde ainsi créée, il gravira les échelons de la hiérarchie, pour
+                        être successivement : Commandant de la Compagnie d’Intervention, Chef Bureau Renseignement, Chef
+                        Bureau Opérations, Commandant du Centre d’Instruction, Commandant du Groupement d’Intervention,
+                        Chef d’Etat-Major et Commandant en Second de la Garde Présidentielle.
+
+                        <br/>En 2001, il est nommé Commandant de la Garde Présidentielle. Il prend une part active à la
+                        création du BIR DELTA (Bataillon d’Intervention Rapide version maritime), chargé de combattre la
+                        criminalité en mer. Il en assure provisoirement le commandement en 2011, jusqu’à sa promotion au
+                        grade de Contre-Amiral et sa nomination au poste de Chef d’Etat-Major de la Marine le 11 mars
+                        2011, poste qu’il occupe à ce jour.
+
+                        <br/>En 2012 et en 2014, il est respectivement auditeur de l’Institut des Hautes Etudes de
+                        Défense Nationale (IHEDN), dans le cadre de la 13ème et de la 15ème édition de son Forum sur le
+                        Continent Africain (FICA).
+
+                        <br/>Le Contre-Amiral MENDOUA Jean est titulaire de plusieurs décorations nationales et
+                        étrangères. Il est marié et père de nombreux enfants. 
+                    </p>
+
+                    <div class="more-address">
+                        <address>
+                            <strong>{% trans "Etat-Major de la Marine Nationale" %}</strong><br>
+                            795 Folsom Ave, Suite 600<br>
+                            San Francisco, CA 94107<br>
+                            <abbr title="Phone">P :</abbr> (+237) 456-7890
+                        </address>
+                        <address>
+                            <strong>Email</strong><br>
+                            <a href="mailto:info@navy.mil.cm">mail@navy.mil.cm</a>
+                        </address>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            {% include "sections/sidebar.html" %}
+
+        </div>
+    </div>
+</div>
+<!-- content-section-ends-here -->
+{% endblock %}

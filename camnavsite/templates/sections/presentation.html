@@ -1,0 +1,71 @@
+{% extends "base.html"%}
+
+{% load staticfiles %}
+
+{% load i18n %}
+
+{% block content %}
+<!-- content-section-starts-here -->
+<div class="main-body">
+    <div class="wrap">
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">Presentation</li>
+        </ol>
+        <div class="col-md-8 content-left">
+            <div class="about">
+                <h2 class="head">{% trans "Presentation" %}</h2>
+                <h5>ARTICULATION</h5>
+                <p>La Marine Nationale est composé de :</p>
+                <ul>
+                    <li>l’Etat-major de la Marine</li>
+                    <li>Formations d’actives constituées de Forces de Surface et de Forces de Fusiliers marins</li>
+                    <li>des éléments de soutien et de formation que sont les Bases Navales, les Ecoles et les Centres
+                    d’Instruction</li>
+                    <li>des organismes spécialisés (Chantier Naval, Ateliers navals).</li>
+
+                </ul>
+
+                <h5>MISSIONS</h5>
+
+                <p>Les Forces de la Marine Nationale sont une composante des Forces de Défense dont l’emploi requiert
+                    principalement l’utilisation des milieux marins, fluviaux et lacustres.
+                    Ainsi, ses missions sont les suivantes :
+                    La Défense des approches maritimes;
+                    La protection des installations d’intérêt économique et scientifique en mer et sur la côte ;
+                    La Défense du territoire aux côtés des autres forces de défense.
+                    La conduite de l’Action de l’Etat en Mer (police du trafic maritime, la surveillance et l’assistance
+                    aux pêches, la prévention et la lutte contre les pollutions)
+                    Les opérations de secours en mer(SAR) ;
+                    La Diplomatie Navale.</p>
+
+                <h5>LES REALISATIONS DE LA MARINE NATIONALE</h5>
+                <p>Longtemps dotée de moyens modestes, la Marine Nationale a depuis 2011 amorcé une véritable montée en
+                    puissance qu’elle a bénéficié d’un ambitieux programme d’équipements. Elle possède actuellement :
+                    02 patrouilleurs de 63 m (CNS SANAGA, CNS LE NTEM)
+                    01 patrouilleur de 52m (CNS DIPIKAR)
+                    02 patrouilleurs de 32 m (CNS GRAND BATANGA, CNS EBODJE)
+                    02 bâtiments de débarquement pouvant transporter une compagnie de 100 hommes (CNS FIFINDA, CNS LE
+                    MOUNGO)
+                    02 patrouilleurs de 24m (CNS LOGONE et CNS la BENOUE)
+                    03 vedettes de 14 m (JUSTICE 1, 2,3)
+                    12 embarcations semi-rigides (06 de 12m et 06 de 6m), ARESA
+                    01 canot Major
+                    Acquisition d’un DOCK flottant
+                    La Marine Nationale a également bénéficié de l’équipement de trois Centres Opérationnels de
+                    Surveillance Côtière(COSCO) à Douala, Kribi et Limbe. Ces centres permettent d’avoir une parfaite
+                    connaissance et compréhension de tout ce qui touche le domaine maritime et qui pourrait avoir un
+                    impact sur la sécurité, la sureté, l’économie ou l’environnement en temps réel, sans forcément être
+                    présent en mer.
+
+                </p>
+
+            </div>
+        </div>
+
+        {% include "sections/sidebar.html" %}
+
+    </div>
+</div>
+<!-- content-section-ends-here -->
+{% endblock %}
