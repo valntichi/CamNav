@@ -1,0 +1,3 @@
+username=ABCol_DEV
+password=xxx
+domain=UNIZA

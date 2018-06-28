@@ -864,7 +864,7 @@ h3.side-title-head {
 	font-weight: 600;            /*Main Color*/
 }
 .accordation_menu label{
-	background: #24166d ;
+	background: #000 ;
 	color:#fff;
 	font-size:17px;
 }
@@ -874,7 +874,7 @@ h3.side-title-head {
 }
 .accordation_menu input:checked + label,
 .accordation_menu input:checked + label:hover{ 
-	background: #24166d ;
+	background: #000 ;
 	color: #fff;
     font-size:17px;
 	    font-family: 'Varela Round', sans-serif;

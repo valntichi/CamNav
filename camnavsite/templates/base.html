@@ -26,6 +26,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script type="application/x-javascript">
          addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
 
+
     </script>
     <!-- for bootstrap working -->
     <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
@@ -46,6 +47,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 
 
+
     </script>
     <script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
@@ -59,6 +61,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
 
 
+
     </script>
 </head>
 <body>
@@ -69,9 +72,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="top-menu">
                 <ul>
                     <li><a href="/">{% trans "Accueil" %}</a></li>
-                    <li><a href="/organisation">{% trans "Organisation" %}</a></li>
-                    <li><a href="/privacy-policy">{% trans "Privacy Policy" %}</a></li>
-                    <li><a href="/contact">{% trans "Nous contacter" %}</a></li>
+                    <li><a href="/a_propos">{% trans "A propos de la Marine Nationale" %}</a></li>
+                    <li><a href="/actualité">{% trans "Actualité" %}</a></li>
+                    <li><a href="/structures">{% trans "Structures de la Marine Nationale" %}</a></li>
+                    <li><a href="/aem">{% trans "Action de l'Etat en mer" %}</a></li>
+                    <li><a href="/metiers">{% trans "Métiers" %}</a></li>
+                    <li><a href="/mediatheque">{% trans "Mediathèque" %}</a></li>
                 </ul>
             </div>
             <div class="num">
@@ -103,7 +109,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="/">{% trans "Accueil" %}</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "A Propos" %}<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "A Propos" %}<b
+                                        class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="/cemm">{% trans "Page du CEMM" %}</a></li>
                                     <li class="divider"></li>
@@ -113,10 +120,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </ul>
                             </li>
 
+                            <li><a href="/action-etat-mer">{% trans "Actualités" %}</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Structures de la Marine Nationale" %}<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/forsur">{% trans "FORSUR" %}</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/forfumapco">{% trans "FORFUMAPCO" %}</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/organismes_spécialisés">{% trans "Organismes spécialisés" %}</a></li>
+                                </ul>
+                            </li>
+
                             <li><a href="/action-etat-mer">{% trans "Action de l'Etat en Mer" %}</a></li>
-                            <li><a href="/ccr">{% trans "CCR Actualites" %}</a></li>
-                            <li><a href="/formations">{% trans "Formation Operationnelles" %}</a></li>
-                            <li><a href="/concours">{% trans "Concours Metiers" %}</a></li>
+                            <li><a href="/metiers">{% trans "Metiers" %}</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Médiathèque" %}<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/textes_officiels">{% trans "Textes Officiels" %}</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/phototheque">{% trans "Photothèque" %}</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/videotheque">{% trans "Vidéothèque" %}</a></li>
+                                </ul>
+                            </li>
                             <div class="clearfix"></div>
                         </ul>
                         <div class="search">
@@ -136,7 +166,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <script src="{% static 'js/uisearch.js' %}"></script>
                             <script>
 							new UISearch( document.getElementById( 'sb-search' ) );
-
 
                             </script>
                             <!-- //search-scripts -->
@@ -158,10 +187,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <h2>{% trans "Dernieres nouvelles" %}</h2>
         </div>
         <div class="marquee">
-            <div class="marquee1"><a class="breaking" href="/single">>>The standard chunk of Lorem Ipsum used since the
-                1500s is reproduced..</a></div>
-            <div class="marquee2"><a class="breaking" href="/single">>>At vero eos et accusamus et iusto qui blanditiis
-                praesentium voluptatum deleniti atque..</a></div>
+            <div class="marquee1"><a class="breaking" href="/single">>>Groupe Naval déployé dans le Golfe de Guinée à
+                l'occasion des festivités du 20 Mai 2018...</a></div>
+            <div class="marquee1"><a class="breaking" href="/single">>>L'Amiral Commandant la Marine Brésilienne en
+                visite au Cameroun...</a></div>
+            <div class="marquee1"><a class="breaking" href="/single">>>Remise des épaulettes et des décorations...</a>
+            </div>
             <div class="clearfix"></div>
             {% for item in list %}
 
@@ -172,6 +203,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <script>
 			  $('.marquee').marquee({ pauseOnHover: true });
 			  //@ sourceURL=pen.js
+
         </script>
     </div>
 </div>
@@ -205,22 +237,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </ul>
             </div>
             <div class="col-md-4 col-xs-6 col-sm-6 footer-grid">
-                <h4 class="footer-head">Flickr Feed</h4>
-                <ul class="flickr">
-                    <li><a href="#"><img src="{% static 'images/bus4.jpg' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/bus2.jpg' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/bus3.jpg' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/tec4.jpg' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/tec2.jpg' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/tec3.jpg' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/bus2.jpg' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/bus3.jpg' %}"></a></li>
-                    <div class="clearfix"></div>
+                <h4 class="footer-head">Liens utiles</h4>
+                 <ul class="cat">
+                    <li><a href="https://www.mindef-online.cm/index.php/fr/">{% trans "MINDEF" %}</a></li>
+                    <li><a href="https://www.prc.cm/">{% trans "PRC" %}</a></li>
+                    <li><a href="https://www.spm.gov.cm">{% trans "Premier Ministere" %}</a></li>
+                    <!--<li><a href="/formations">{% trans "Formations" %}</a></li>-->
+                    <!--<li><a href="/organisation">{% trans "Organisations" %}</a></li>-->
                 </ul>
             </div>
             <div class="col-md-3 col-xs-12 footer-grid">
                 <h4 class="footer-head">{% trans "Contactez Nous" %}</h4>
-                <span class="hq">{% trans "Notre quartier general" %}</span>
+                <span class="hq">{% trans "Etat-major de la marine" %}</span>
                 <address>
                     <ul class="location">
                         <li><span class="glyphicon glyphicon-map-marker"></span></li>
@@ -234,7 +262,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </ul>
                     <ul class="location">
                         <li><span class="glyphicon glyphicon-envelope"></span></li>
-                        <li><a href="mailto:info@example.com">mail@navy.mil.cm</a></li>
+                        <li><a href="mailto:info@navy.cm">mail@navy.mil.cm</a></li>
                         <div class="clearfix"></div>
                     </ul>
                 </address>
@@ -246,15 +274,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="wrap">
             <div class="copyrights col-md-6">
                 <p> © {% now 'Y' %} {% trans "Marine Nationale Camerounaise" %}. {% trans "All Rights Reserved | Design by" %} <a
-                        href="http://w3layouts.com/"> W3layouts</a></p>
+                            href="http://w3layouts.com/"> W3layouts</a></p>
             </div>
             <div class="footer-social-icons col-md-6">
                 <ul>
                     <li><a class="facebook" href="https://www.facebook.com/cameroonnavy/"></a></li>
                     <li><a class="twitter" href="#"></a></li>
-                    <li><a class="flickr" href="#"></a></li>
                     <li><a class="googleplus" href="#"></a></li>
-                    <li><a class="dribbble" href="#"></a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>
@@ -274,6 +300,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				*/
 		$().UItoTop({ easingType: 'easeOutQuart' });
 });
+
 
 
 </script>

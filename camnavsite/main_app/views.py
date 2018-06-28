@@ -30,7 +30,7 @@ class ActionEtatView(TemplateView):
 
 
 class CCRView(TemplateView):
-    template_name = "sections/technology.html"
+    template_name = "sections/business.html"
 
 
 class HistoriqueView(TemplateView):
@@ -42,8 +42,10 @@ class ConcoursView(TemplateView):
 
 
 class FormationView(TemplateView):
-    template_name = "sections/shortcodes.html"
+    template_name = "sections/business.html"
 
+class TestView(TemplateView):
+    template_name = "sections/test.html"
 
 class SingleView(TemplateView):
     template_name = "sections/single.html"
