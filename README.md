@@ -8,14 +8,14 @@ https://tutorial.djangogirls.org/en/django_start_project/
 
 ### Create the project
 
-```django-admin startproject mycamnavsite```
+```django-admin.py startproject camnavsite```
 
 
 ### Create apps
 
 cd mymycamnavsite
 
-```django-admin startapp main_app```
+```django-admin.py startapp main_app```
 
 ### Run the website
 
@@ -187,3 +187,21 @@ sudo ln -s /etc/nginx/sites-available/navy-cm.conf /etc/nginx/sites-enabled/
 
 
 /usr/local/etc/nginx/nginx.conf
+
+
+Template:
+
+file:///Users/patricktchankue/Downloads/web%204/index.html
+
+Express News
+
+images
+---
+    - articles: 400x200
+
+    - side bar: 302x148
+
+    - slider:
+
+    - photo slider: 250 x 250
+
