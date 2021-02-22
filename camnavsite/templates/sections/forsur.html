@@ -1,0 +1,80 @@
+{% extends "base.html"%}
+
+{% load staticfiles %}
+
+{% block content %}
+<!-- content-section-starts-here -->
+<div class="main-body">
+    <div class="wrap">
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">FORSUR</li>
+        </ol>
+        <div class="single-page">
+            <div class="col-md-2 share_grid">
+                <h3>SHARE</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="facebook"></i>
+                            <div class="views">
+                                <span>SHARE</span>
+                                <label>180</label>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="twitter"></i>
+                            <div class="views">
+                                <span>TWEET</span>
+                                <label>355</label>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="linkedin"></i>
+                            <div class="views">
+                                <span>SHARES</span>
+                                <label>28</label>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="email"></i>
+                            <div class="views">
+                                <span>Email</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 content-left single-post">
+                <div class="blog-posts">
+                    <h3 class="post">Forces de surface - FORSUR</h3>
+                    <div class="last-article">
+                        <p class="artext">With Cameron immediately renewing his pledge to hold a referendum on British
+                            membership of the European Union, the result throws up questions about Britain’s
+                            constitutional future. For now, the surprise victory was welcomed by markets, with stocks
+                            and the pound rallying as it became clear Cameron had defied forecasts of a hung parliament
+                            to easily defeat Ed Miliband’s Labour Party and govern alone.</p>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            {% include "sections/sidebar.html" %}
+
+        </div>
+    </div>
+</div>
+<!-- content-section-ends-here -->
+{% endblock %}

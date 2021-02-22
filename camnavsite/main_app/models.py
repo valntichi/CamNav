@@ -18,8 +18,8 @@ class Category(models.Model):
 
 
 class Article(models.Model):
-    author = models.ForeignKey(User)
-    category = models.ForeignKey(Category)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     content = models.TextField()
     breaking = models.BooleanField(default=False)

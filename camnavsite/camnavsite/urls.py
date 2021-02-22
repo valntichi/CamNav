@@ -13,7 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.i18n import i18n_patterns
@@ -22,7 +22,7 @@ from django.conf.urls.i18n import i18n_patterns
 from main_app.views import (HomeView,PageCEMMView,OrganisationView, InformationView,
                             ActionEtatView, CCRView, SingleView,
                             HistoriqueView,FormationView, ConcoursView, ContactView,
-                            TestView
+                            TestView, ForsurView, ActualiteView
                             )
 
 
@@ -43,11 +43,15 @@ urlpatterns = i18n_patterns (
     url(r'^phototeque/$', ConcoursView.as_view(), name="phototeque"),
     url(r'^videotheque/$', ConcoursView.as_view(), name="videotheque"),
 
-    url(r'^aem/$', TestView.as_view(), name="aem"),
-    url(r'^ccr/$', CCRView.as_view(), name="ccr"),
+    url(r'^aem/$', TestView.as_view(template_name='sections/test.html'), name="aem"),
+    url(r'^ccr/$', TestView.as_view(template_name='sections/fashion.html'), name="ccr"),
     url(r'^formations/$', FormationView.as_view(), name="formations"),
+    url(r'^forsur/$', ForsurView.as_view(), name="forsur"),
+    url(r'^20mai/$', ActualiteView.as_view(), name="20mai"),
 
-    url(r'^single/$', SingleView.as_view(), name="single"),
+    url(r'^single/$', TestView.as_view(template_name='sections/single.html'), name="single"),
+
+    url(r'^react/', include('react_app.urls'))
 
 )
 urlpatterns += staticfiles_urlpatterns()

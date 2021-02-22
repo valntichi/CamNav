@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-{% load staticfiles %}
+{% load static %}
 {% load i18n %}
 <html>
 <head>
@@ -71,13 +71,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="wrap">
             <div class="top-menu">
                 <ul>
-                    <li><a href="/">{% trans "Accueil" %}</a></li>
-                    <li><a href="/a_propos">{% trans "A propos de la Marine Nationale" %}</a></li>
-                    <li><a href="/actualité">{% trans "Actualité" %}</a></li>
-                    <li><a href="/structures">{% trans "Structures de la Marine Nationale" %}</a></li>
-                    <li><a href="/aem">{% trans "Action de l'Etat en mer" %}</a></li>
-                    <li><a href="/metiers">{% trans "Métiers" %}</a></li>
-                    <li><a href="/mediatheque">{% trans "Mediathèque" %}</a></li>
+                    <li><a href="/">{% trans "Organigramme" %}</a></li>
+                    <li><a href="/a_propos">{% trans "Textes officiels" %}</a></li>
+                    <li><a href="/actualite">{% trans "Etat-Major" %}</a></li>
+                    <li><a href="/forsur">{% trans "FORSUR" %}</a></li>
+                    <li><a href="/aem">{% trans "FORFUMAPCO" %}</a></li>
+                    <li><a href="/metiers">{% trans "Organismes Sp&eacute;cialis&eacute;s" %}</a></li>
+                    <li><a href="https://www.mindef-online.cm" target="_blank">{% trans "MINDEF" %}</a></li>
                 </ul>
             </div>
             <div class="num">
@@ -120,31 +120,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 </ul>
                             </li>
 
-                            <li><a href="/action-etat-mer">{% trans "Actualités" %}</a></li>
+                            <li><a href="/action-etat-mer">{% trans "Actualit&eacute;s" %}</a></li>
 
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Structures de la Marine Nationale" %}<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Structures" %}<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="/forsur">{% trans "FORSUR" %}</a></li>
                                     <li class="divider"></li>
                                     <li><a href="/forfumapco">{% trans "FORFUMAPCO" %}</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="/organismes_spécialisés">{% trans "Organismes spécialisés" %}</a></li>
+                                    <li><a href="/organismes_specialises">{% trans "Organismes sp&eacute;cialisés" %}</a></li>
                                 </ul>
                             </li>
 
                             <li><a href="/action-etat-mer">{% trans "Action de l'Etat en Mer" %}</a></li>
-                            <li><a href="/metiers">{% trans "Metiers" %}</a></li>
+                            <li><a href="/metiers">{% trans "M&eacute;tiers" %}</a></li>
 
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Médiathèque" %}<b
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "M&eacute;diathèque" %}<b
                                         class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="/textes_officiels">{% trans "Textes Officiels" %}</a></li>
                                     <li class="divider"></li>
                                     <li><a href="/phototheque">{% trans "Photothèque" %}</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="/videotheque">{% trans "Vidéothèque" %}</a></li>
+                                    <li><a href="/videotheque">{% trans "Vid&eacute;othèque" %}</a></li>
                                 </ul>
                             </li>
                             <div class="clearfix"></div>
@@ -184,14 +184,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="wrap">
     <div class="move-text">
         <div class="breaking_news">
-            <h2>{% trans "Dernieres nouvelles" %}</h2>
+            <h2>{% trans "Derni&egrave;res nouvelles" %}</h2>
         </div>
         <div class="marquee">
-            <div class="marquee1"><a class="breaking" href="/single">>>Groupe Naval déployé dans le Golfe de Guinée à
-                l'occasion des festivités du 20 Mai 2018...</a></div>
-            <div class="marquee1"><a class="breaking" href="/single">>>L'Amiral Commandant la Marine Brésilienne en
+            <div class="marquee1"><a class="breaking" href="/single">>> Groupe Naval déployé dans le Golfe de Guin&eacute;e à
+                l'occasion des festivit&eacute;s du 20 Mai 2018...</a></div>
+            <div class="marquee1"><a class="breaking" href="/single">>> L'Amiral Commandant la Marine Br&eacute;silienne en
                 visite au Cameroun...</a></div>
-            <div class="marquee1"><a class="breaking" href="/single">>>Remise des épaulettes et des décorations...</a>
+            <div class="marquee1"><a class="breaking" href="/single">>> Remise des &eacute;paulettes et des d&eacute;corations...</a>
             </div>
             <div class="clearfix"></div>
             {% for item in list %}
@@ -227,11 +227,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     opposed to using 'Content here.</p>
             </div>
             <div class="col-md-2 col-xs-6 col-sm-2 footer-grid">
-                <h4 class="footer-head">{% trans "Categories" %}</h4>
+                <h4 class="footer-head">{% trans "Cat&eacute;gories" %}</h4>
                 <ul class="cat">
                     <li><a href="/cemm">{% trans "Page du CEMM" %}</a></li>
                     <li><a href="/historique">{% trans "Historique" %}</a></li>
-                    <li><a href="/concours">{% trans "Concours metiers" %}</a></li>
+                    <li><a href="/concours">{% trans "Concours m&eacute;tiers" %}</a></li>
                     <li><a href="/formations">{% trans "Formations" %}</a></li>
                     <li><a href="/organisation">{% trans "Organisations" %}</a></li>
                 </ul>
@@ -239,9 +239,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="col-md-4 col-xs-6 col-sm-6 footer-grid">
                 <h4 class="footer-head">Liens utiles</h4>
                  <ul class="cat">
-                    <li><a href="https://www.mindef-online.cm/index.php/fr/">{% trans "MINDEF" %}</a></li>
-                    <li><a href="https://www.prc.cm/">{% trans "PRC" %}</a></li>
-                    <li><a href="https://www.spm.gov.cm">{% trans "Premier Ministere" %}</a></li>
+                    <li><a href="https://www.mindef-online.cm/" target="_blank">{% trans "Minist&egrave;re de la d&eacute;fense" %}</a></li>
+                    <li><a href="https://www.prc.cm/" target="_blank">{% trans "Pr&eacute;sidence de la R&eacute;publique" %}</a></li>
+                    <li><a href="https://www.spm.gov.cm" target="_blank">{% trans "Pr&eacute;mier Minist&egrave;re" %}</a></li>
                     <!--<li><a href="/formations">{% trans "Formations" %}</a></li>-->
                     <!--<li><a href="/organisation">{% trans "Organisations" %}</a></li>-->
                 </ul>
@@ -252,7 +252,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <address>
                     <ul class="location">
                         <li><span class="glyphicon glyphicon-map-marker"></span></li>
-                        <li>Central Business District in Yaounde not far from the Intendance's pharmacy</li>
+                        <li>Central Business District in Yaound&eacute;, not far from the Intendance's pharmacy</li>
                         <div class="clearfix"></div>
                     </ul>
                     <ul class="location">

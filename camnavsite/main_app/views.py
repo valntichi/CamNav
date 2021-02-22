@@ -45,7 +45,7 @@ class FormationView(TemplateView):
     template_name = "sections/business.html"
 
 class TestView(TemplateView):
-    template_name = "sections/test.html"
+    pass
 
 class SingleView(TemplateView):
     template_name = "sections/single.html"
@@ -54,6 +54,9 @@ class SingleView(TemplateView):
 class PrivacyPolicyView(TemplateView):
     template_name = "sections/privacy-policy.html"
 
+class ActualiteView(TemplateView):
+    template_name = "sections/20mai2018.html"
+
 
 class ContactView(TemplateView):
     template_name = "sections/contact.html"
@@ -61,6 +64,11 @@ class ContactView(TemplateView):
 
 class TankerView(TemplateView):
     template_name = "sections/tanker.html"
+
+class ForsurView(TemplateView):
+    template_name = "sections/forsur.html"
+
+
 '''
 login API
 '''
@@ -82,5 +90,5 @@ class LoginView(View):
             user = authenticate(username=request.POST['username'], password=request.POST['password'])
             if user:
                 context['authenticated'] = True
-                print user
+                print(user)
         return render(request, self.template_name, context=context)
